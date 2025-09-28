@@ -1,0 +1,374 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-signup-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Main container for the two sides */
+.split-screen-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Styling for each side */
+.split-side {
+    flex: 1; /* Initially, each side takes up 50% width */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* The core of the animation! */
+    transition: flex 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+/* Background gradients for each side */
+.interviewer-side {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+.candidate-side {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    position: relative;
+}
+
+/* Animated background patterns */
+.interviewer-side::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 2px, transparent 2px);
+    background-size: 50px 50px;
+    animation: float 20s ease-in-out infinite;
+    opacity: 0.5;
+}
+
+.candidate-side::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%);
+    background-size: 40px 40px;
+    animation: slide 15s linear infinite;
+    opacity: 0.3;
+}
+
+/* Adding a dark overlay for text readability */
+.side-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.8s ease;
+    z-index: 1;
+}
+
+/* Content wrapper to stay above the overlay */
+.side-content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 500px;
+    transform: translateY(0);
+    transition: transform 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.side-icon {
+    font-size: 4rem;
+    margin: 0 auto 1.5rem auto;
+    opacity: 0.9;
+    transition: all 0.8s ease;
+    display: block;
+    text-align: center;
+}
+
+.side-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease;
+}
+
+/* This is the content that fades in */
+.side-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+}
+
+.side-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.feature-list {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.feature-list i {
+    color: #4ade80;
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.side-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.side-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* --- THE HOVER ANIMATION LOGIC --- */
+.split-screen-container:hover .split-side:hover {
+    flex: 2.5; /* Reduced expansion to give more space to collapsed side */
+}
+
+.split-screen-container:hover .split-side:not(:hover) {
+    flex: 0.5; /* Increased collapsed side width for better visibility */
+}
+
+.split-screen-container:hover .split-side:hover .side-background-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.split-screen-container:hover .split-side:not(:hover) .side-background-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* When a side expands, show its content */
+.split-screen-container:hover .split-side:hover .side-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scale down the non-hovered side content */
+.split-screen-container:hover .split-side:not(:hover) .side-content-wrapper {
+    transform: scale(0.9);
+}
+
+.split-screen-container:hover .split-side:not(:hover) .side-title {
+    font-size: 2.5rem;
+}
+
+.split-screen-container:hover .split-side:not(:hover) .side-icon {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+/* Enhanced hover effects for the expanded side */
+.split-screen-container:hover .split-side:hover .side-icon {
+    font-size: 5rem;
+    transform: scale(1.1);
+}
+
+.split-screen-container:hover .split-side:hover .side-title {
+    font-size: 3.5rem;
+    transform: translateY(-10px);
+}
+
+/* Back to home link */
+.back-to-home {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.back-link:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-link i {
+    margin-right: 0.5rem;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; }
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 992px) {
+    .side-title {
+        font-size: 2.5rem;
+    }
+    
+    .side-icon {
+        font-size: 3rem;
+    }
+    
+    .side-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .split-screen-container {
+        flex-direction: column; /* Stack the sides vertically */
+    }
+
+    .split-side {
+        flex: 1;
+        min-height: 50vh;
+    }
+
+    .side-title {
+        font-size: 2.2rem;
+    }
+    
+    .side-icon {
+        font-size: 2.5rem;
+    }
+    
+    /* On mobile, we want the content visible by default, not on hover */
+    .side-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .feature-list {
+        text-align: center;
+    }
+    
+    /* Disable hover effects on mobile */
+    .split-screen-container:hover .split-side:hover,
+    .split-screen-container:hover .split-side:not(:hover) {
+        flex: 1;
+    }
+    
+    .split-screen-container:hover .split-side:not(:hover) .side-content-wrapper {
+        transform: scale(1);
+    }
+    
+    .back-to-home {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .back-link {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .side-content-wrapper {
+        padding: 1.5rem 1rem;
+    }
+    
+    .side-title {
+        font-size: 1.8rem;
+    }
+    
+    .side-content p {
+        font-size: 1rem;
+    }
+    
+    .feature-list {
+        font-size: 0.9rem;
+    }
+    
+    .side-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}

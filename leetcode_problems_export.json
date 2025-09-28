@@ -1,0 +1,1697 @@
+{
+  "metadata": {
+    "total_problems": 60,
+    "export_date": "2025-09-21T14:14:07.575739",
+    "source": "LeetCode GraphQL API",
+    "note": "Authentic LeetCode problems to replace DeepMind data"
+  },
+  "problems": [
+    {
+      "problem_id": "leetcode_invert-binary-tree",
+      "title": "Invert Binary Tree",
+      "description": "<p>Given the <code>root</code> of a binary tree, invert the tree, and return <em>its root</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg\" style=\"width: 500px; height: 165px;\" />\n<pre>\n<strong>Input:</strong> root = [4,2,7,1,3,6,9]\n<strong>Output:</strong> [4,7,2,9,6,3,1]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg\" style=\"width: 500px; height: 120px;\" />\n<pre>\n<strong>Input:</strong> root = [2,1,3]\n<strong>Output:</strong> [2,3,1]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "acceptance_rate": 79.38174602877865,
+      "hints": [],
+      "mcq_question": "Which data structure would be most helpful in solving 'Invert Binary Tree'?",
+      "mcq_options": [
+        "Linked List",
+        "Binary Tree",
+        "Hash Map",
+        "Array"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Invert Binary Tree, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_valid-phone-numbers",
+      "title": "Valid Phone Numbers",
+      "description": "<p>Given a text file <code>file.txt</code> that contains a list of phone numbers (one per line), write a one-liner bash script to print all valid phone numbers.</p>\n\n<p>You may assume that a valid phone number must appear in one of the following two formats: (xxx) xxx-xxxx or xxx-xxx-xxxx. (x means a digit)</p>\n\n<p>You may also assume each line in the text file must not contain leading or trailing white spaces.</p>\n\n<p><strong class=\"example\">Example:</strong></p>\n\n<p>Assume that <code>file.txt</code> has the following content:</p>\n\n<pre>\n987-123-4567\n123 456 7890\n(123) 456-7890\n</pre>\n\n<p>Your script should output the following valid phone numbers:</p>\n\n<pre>\n987-123-4567\n(123) 456-7890\n</pre>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Shell"
+      ],
+      "acceptance_rate": 28.046682708318205,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Valid Phone Numbers' efficiently?",
+      "mcq_options": [
+        "Binary Search",
+        "Brute Force",
+        "Recursive Approach",
+        "Linear Search"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Valid Phone Numbers, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_decode-xored-array",
+      "title": "Decode XORed Array",
+      "description": "<p>There is a <strong>hidden</strong> integer array <code>arr</code> that consists of <code>n</code> non-negative integers.</p>\n\n<p>It was encoded into another integer array <code>encoded</code> of length <code>n - 1</code>, such that <code>encoded[i] = arr[i] XOR arr[i + 1]</code>. For example, if <code>arr = [1,0,2,1]</code>, then <code>encoded = [1,2,3]</code>.</p>\n\n<p>You are given the <code>encoded</code> array. You are also given an integer <code>first</code>, that is the first element of <code>arr</code>, i.e. <code>arr[0]</code>.</p>\n\n<p>Return <em>the original array</em> <code>arr</code>. It can be proved that the answer exists and is unique.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> encoded = [1,2,3], first = 1\n<strong>Output:</strong> [1,0,2,1]\n<strong>Explanation:</strong> If arr = [1,0,2,1], then first = 1 and encoded = [1 XOR 0, 0 XOR 2, 2 XOR 1] = [1,2,3]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> encoded = [6,2,7,3], first = 4\n<strong>Output:</strong> [4,2,0,7,4]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>4</sup></code></li>\n\t<li><code>encoded.length == n - 1</code></li>\n\t<li><code>0 &lt;= encoded[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= first &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Bit Manipulation"
+      ],
+      "acceptance_rate": 87.11008226993954,
+      "hints": [
+        "Since that encoded[i] = arr[i] XOR arr[i+1], then arr[i+1] = encoded[i] XOR arr[i].",
+        "Iterate on i from beginning to end, and set arr[i+1] = encoded[i] XOR arr[i]."
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Decode XORed Array' efficiently?",
+      "mcq_options": [
+        "Binary Search",
+        "Brute Force",
+        "Recursive Approach",
+        "Linear Search"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Decode XORed Array, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_prime-arrangements",
+      "title": "Prime Arrangements",
+      "description": "<p>Return the number of permutations of 1 to <code>n</code> so that prime numbers are at prime indices (1-indexed.)</p>\n\n<p><em>(Recall that an integer&nbsp;is prime if and only if it is greater than 1, and cannot be written as a product of two positive integers&nbsp;both smaller than it.)</em></p>\n\n<p>Since the answer may be large, return the answer <strong>modulo <code>10^9 + 7</code></strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> For example [1,2,5,4,3] is a valid permutation, but [5,2,3,4,1] is not because the prime number 5 is at index 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 100\n<strong>Output:</strong> 682289015\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Math"
+      ],
+      "acceptance_rate": 60.15336205053005,
+      "hints": [
+        "Solve the problem for prime numbers and composite numbers separately.",
+        "Multiply the number of permutations of prime numbers over prime indices with the number of permutations of composite numbers over composite indices.",
+        "The number of permutations equals the factorial."
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Prime Arrangements'?",
+      "mcq_options": [
+        "Binary Search",
+        "Brute Force",
+        "Linear Search",
+        "Recursive Approach"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Prime Arrangements, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_find-numbers-with-even-number-of-digits",
+      "title": "Find Numbers with Even Number of Digits",
+      "description": "<p>Given an array <code>nums</code> of integers, return how many of them contain an <strong>even number</strong> of digits.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [12,345,2,6,7896]\n<strong>Output:</strong> 2\n<strong>Explanation: \n</strong>12 contains 2 digits (even number of digits).&nbsp;\n345 contains 3 digits (odd number of digits).&nbsp;\n2 contains 1 digit (odd number of digits).&nbsp;\n6 contains 1 digit (odd number of digits).&nbsp;\n7896 contains 4 digits (even number of digits).&nbsp;\nTherefore only 12 and 7896 contain an even number of digits.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [555,901,482,1771]\n<strong>Output:</strong> 1 \n<strong>Explanation: </strong>\nOnly 1771 contains an even number of digits.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 500</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Math"
+      ],
+      "acceptance_rate": 79.49912807361108,
+      "hints": [
+        "How to compute the number of digits of a number ?",
+        "Divide the number by 10 again and again to get the number of digits."
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'Find Numbers with Even Number of Digits'?",
+      "mcq_options": [
+        "Recursive Approach",
+        "Brute Force",
+        "Linear Search",
+        "Binary Search"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Find Numbers with Even Number of Digits, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_valid-parentheses",
+      "title": "Valid Parentheses",
+      "description": "<p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>\n\n<p>An input string is valid if:</p>\n\n<ol>\n\t<li>Open brackets must be closed by the same type of brackets.</li>\n\t<li>Open brackets must be closed in the correct order.</li>\n\t<li>Every close bracket has a corresponding open bracket of the same type.</li>\n</ol>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;()&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;()[]{}&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;(]&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;([])&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n</div>\n\n<p><strong class=\"example\">Example 5:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;([)]&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "String",
+        "Stack"
+      ],
+      "acceptance_rate": 42.89504024901557,
+      "hints": [
+        "Use a stack of characters.",
+        "When you encounter an opening bracket, push it to the top of the stack.",
+        "When you encounter a closing bracket, check if the top of the stack was the opening for it. If yes, pop it from the stack. Otherwise, return false."
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'Valid Parentheses'?",
+      "mcq_options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Heap Sort",
+        "Counting Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Valid Parentheses, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_increasing-decreasing-string",
+      "title": "Increasing Decreasing String",
+      "description": "<p>You are given a string <code>s</code>. Reorder the string using the following algorithm:</p>\n\n<ol>\n\t<li>Remove the <strong>smallest</strong> character from <code>s</code> and <strong>append</strong> it to the result.</li>\n\t<li>Remove the <strong>smallest</strong> character from <code>s</code> that is greater than the last appended character, and <strong>append</strong> it to the result.</li>\n\t<li>Repeat step 2 until no more characters can be removed.</li>\n\t<li>Remove the <strong>largest</strong> character from <code>s</code> and <strong>append</strong> it to the result.</li>\n\t<li>Remove the <strong>largest</strong> character from <code>s</code> that is smaller than the last appended character, and <strong>append</strong> it to the result.</li>\n\t<li>Repeat step 5 until no more characters can be removed.</li>\n\t<li>Repeat steps 1 through 6 until all characters from <code>s</code> have been removed.</li>\n</ol>\n\n<p>If the smallest or largest character appears more than once, you may choose any occurrence to append to the result.</p>\n\n<p>Return the resulting string after reordering <code>s</code> using this algorithm.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaaabbbbcccc&quot;\n<strong>Output:</strong> &quot;abccbaabccba&quot;\n<strong>Explanation:</strong> After steps 1, 2 and 3 of the first iteration, result = &quot;abc&quot;\nAfter steps 4, 5 and 6 of the first iteration, result = &quot;abccba&quot;\nFirst iteration is done. Now s = &quot;aabbcc&quot; and we go back to step 1\nAfter steps 1, 2 and 3 of the second iteration, result = &quot;abccbaabc&quot;\nAfter steps 4, 5 and 6 of the second iteration, result = &quot;abccbaabccba&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;rat&quot;\n<strong>Output:</strong> &quot;art&quot;\n<strong>Explanation:</strong> The word &quot;rat&quot; becomes &quot;art&quot; after re-ordering it with the mentioned algorithm.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 500</code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "acceptance_rate": 76.96045216414088,
+      "hints": [
+        "Count the frequency of each character.",
+        "Loop over all character from 'a' to 'z' and append the character if it exists and decrease frequency by 1. Do the same from 'z' to 'a'.",
+        "Keep repeating until the frequency of all characters is zero."
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Increasing Decreasing String'?",
+      "mcq_options": [
+        "Heap Sort",
+        "Quick Sort",
+        "Counting Sort",
+        "Merge Sort"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Increasing Decreasing String, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_degree-of-an-array",
+      "title": "Degree of an Array",
+      "description": "<p>Given a non-empty array of non-negative integers <code>nums</code>, the <b>degree</b> of this array is defined as the maximum frequency of any one of its elements.</p>\n\n<p>Your task is to find the smallest possible length of a (contiguous) subarray of <code>nums</code>, that has the same degree as <code>nums</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2,3,1]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> \nThe input array has a degree of 2 because both elements 1 and 2 appear twice.\nOf the subarrays that have the same degree:\n[1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]\nThe shortest length is 2. So return 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,2,3,1,4,2]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> \nThe degree is 3 because the element 2 is repeated 3 times.\nSo [2,2,3,1,4,2] is the shortest subarray, therefore returning 6.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>nums.length</code> will be between 1 and 50,000.</li>\n\t<li><code>nums[i]</code> will be an integer between 0 and 49,999.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Hash Table"
+      ],
+      "acceptance_rate": 57.67342573158562,
+      "hints": [
+        "Say 5 is the only element that occurs the most number of times - for example, nums = [1, 5, 2, 3, 5, 4, 5, 6].  What is the answer?"
+      ],
+      "mcq_question": "What optimization technique applies to 'Degree of an Array'?",
+      "mcq_options": [
+        "Dynamic Programming",
+        "Greedy Algorithm",
+        "Divide and Conquer",
+        "Brute Force"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Degree of an Array, Dynamic Programming is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_redistribute-characters-to-make-all-strings-equal",
+      "title": "Redistribute Characters to Make All Strings Equal",
+      "description": "<p>You are given an array of strings <code>words</code> (<strong>0-indexed</strong>).</p>\n\n<p>In one operation, pick two <strong>distinct</strong> indices <code>i</code> and <code>j</code>, where <code>words[i]</code> is a non-empty string, and move <strong>any</strong> character from <code>words[i]</code> to <strong>any</strong> position in <code>words[j]</code>.</p>\n\n<p>Return <code>true</code> <em>if you can make<strong> every</strong> string in </em><code>words</code><em> <strong>equal </strong>using <strong>any</strong> number of operations</em>,<em> and </em><code>false</code> <em>otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;abc&quot;,&quot;aabc&quot;,&quot;bc&quot;]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Move the first &#39;a&#39; in <code>words[1] to the front of words[2],\nto make </code><code>words[1]</code> = &quot;abc&quot; and words[2] = &quot;abc&quot;.\nAll the strings are now equal to &quot;abc&quot;, so return <code>true</code>.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;ab&quot;,&quot;a&quot;]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> It is impossible to make all the strings equal using the operation.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 100</code></li>\n\t<li><code>words[i]</code> consists of lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "acceptance_rate": 66.76277646018237,
+      "hints": [
+        "Characters are independent—only the frequency of characters matters.",
+        "It is possible to distribute characters if all characters can be divided equally among all strings."
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Redistribute Characters to Make All Strings Equal' efficiently?",
+      "mcq_options": [
+        "Linear Search",
+        "Binary Search",
+        "Recursive Approach",
+        "Brute Force"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Redistribute Characters to Make All Strings Equal, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_average-salary-excluding-the-minimum-and-maximum-salary",
+      "title": "Average Salary Excluding the Minimum and Maximum Salary",
+      "description": "<p>You are given an array of <strong>unique</strong> integers <code>salary</code> where <code>salary[i]</code> is the salary of the <code>i<sup>th</sup></code> employee.</p>\n\n<p>Return <em>the average salary of employees excluding the minimum and maximum salary</em>. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> salary = [4000,3000,1000,2000]\n<strong>Output:</strong> 2500.00000\n<strong>Explanation:</strong> Minimum salary and maximum salary are 1000 and 4000 respectively.\nAverage salary excluding minimum and maximum salary is (2000+3000) / 2 = 2500\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> salary = [1000,2000,3000]\n<strong>Output:</strong> 2000.00000\n<strong>Explanation:</strong> Minimum salary and maximum salary are 1000 and 3000 respectively.\nAverage salary excluding minimum and maximum salary is (2000) / 1 = 2000\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= salary.length &lt;= 100</code></li>\n\t<li><code>1000 &lt;= salary[i] &lt;= 10<sup>6</sup></code></li>\n\t<li>All the integers of <code>salary</code> are <strong>unique</strong>.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Sorting"
+      ],
+      "acceptance_rate": 63.439885568526634,
+      "hints": [
+        "Get the total sum and subtract the minimum and maximum value in the array.  Finally divide the result by n - 2."
+      ],
+      "mcq_question": "Which approach reduces complexity in 'Average Salary Excluding the Minimum and Maximum Salary'?",
+      "mcq_options": [
+        "Dynamic Programming",
+        "Brute Force",
+        "Divide and Conquer",
+        "Greedy Algorithm"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Average Salary Excluding the Minimum and Maximum Salary, Dynamic Programming is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_range-sum-query-immutable",
+      "title": "Range Sum Query - Immutable",
+      "description": "<p>Given an integer array <code>nums</code>, handle multiple queries of the following type:</p>\n\n<ol>\n\t<li>Calculate the <strong>sum</strong> of the elements of <code>nums</code> between indices <code>left</code> and <code>right</code> <strong>inclusive</strong> where <code>left &lt;= right</code>.</li>\n</ol>\n\n<p>Implement the <code>NumArray</code> class:</p>\n\n<ul>\n\t<li><code>NumArray(int[] nums)</code> Initializes the object with the integer array <code>nums</code>.</li>\n\t<li><code>int sumRange(int left, int right)</code> Returns the <strong>sum</strong> of the elements of <code>nums</code> between indices <code>left</code> and <code>right</code> <strong>inclusive</strong> (i.e. <code>nums[left] + nums[left + 1] + ... + nums[right]</code>).</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;NumArray&quot;, &quot;sumRange&quot;, &quot;sumRange&quot;, &quot;sumRange&quot;]\n[[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]\n<strong>Output</strong>\n[null, 1, -1, -3]\n\n<strong>Explanation</strong>\nNumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);\nnumArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1\nnumArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1\nnumArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= left &lt;= right &lt; nums.length</code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>sumRange</code>.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Design",
+        "Prefix Sum"
+      ],
+      "acceptance_rate": 69.76878843720165,
+      "hints": [],
+      "mcq_question": "What algorithm would be most suitable for solving 'Range Sum Query - Immutable'?",
+      "mcq_options": [
+        "Linear Search",
+        "Recursive Approach",
+        "Brute Force",
+        "Binary Search"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Range Sum Query - Immutable, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_verifying-an-alien-dictionary",
+      "title": "Verifying an Alien Dictionary",
+      "description": "<p>In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different <code>order</code>. The <code>order</code> of the alphabet is some permutation of lowercase letters.</p>\n\n<p>Given a sequence of <code>words</code> written in the alien language, and the <code>order</code> of the alphabet, return <code>true</code> if and only if the given <code>words</code> are sorted lexicographically in this alien language.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;hello&quot;,&quot;leetcode&quot;], order = &quot;hlabcdefgijkmnopqrstuvwxyz&quot;\n<strong>Output:</strong> true\n<strong>Explanation: </strong>As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;], order = &quot;worldabcefghijkmnpqstuvxyz&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>As &#39;d&#39; comes after &#39;l&#39; in this language, then words[0] &gt; words[1], hence the sequence is unsorted.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;apple&quot;,&quot;app&quot;], order = &quot;abcdefghijklmnopqrstuvwxyz&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>The first three characters &quot;app&quot; match, and the second string is shorter (in size.) According to lexicographical rules &quot;apple&quot; &gt; &quot;app&quot;, because &#39;l&#39; &gt; &#39;&empty;&#39;, where &#39;&empty;&#39; is defined as the blank character which is less than any other character (<a href=\"https://en.wikipedia.org/wiki/Lexicographical_order\" target=\"_blank\">More info</a>).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 20</code></li>\n\t<li><code>order.length == 26</code></li>\n\t<li>All characters in <code>words[i]</code> and <code>order</code> are English lowercase letters.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "acceptance_rate": 55.698754581076,
+      "hints": [],
+      "mcq_question": "What algorithm would be most suitable for solving 'Verifying an Alien Dictionary'?",
+      "mcq_options": [
+        "DFS",
+        "BFS",
+        "Union Find",
+        "Dijkstra"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Verifying an Alien Dictionary, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.736378",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_add-strings",
+      "title": "Add Strings",
+      "description": "<p>Given two non-negative integers, <code>num1</code> and <code>num2</code> represented as string, return <em>the sum of</em> <code>num1</code> <em>and</em> <code>num2</code> <em>as a string</em>.</p>\n\n<p>You must solve the problem without using any built-in library for handling large integers (such as <code>BigInteger</code>). You must also not convert the inputs to integers directly.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num1 = &quot;11&quot;, num2 = &quot;123&quot;\n<strong>Output:</strong> &quot;134&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num1 = &quot;456&quot;, num2 = &quot;77&quot;\n<strong>Output:</strong> &quot;533&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num1 = &quot;0&quot;, num2 = &quot;0&quot;\n<strong>Output:</strong> &quot;0&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num1.length, num2.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>num1</code> and <code>num2</code> consist of only digits.</li>\n\t<li><code>num1</code> and <code>num2</code> don&#39;t have any leading zeros except for the zero itself.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "acceptance_rate": 51.928984274676374,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Add Strings' efficiently?",
+      "mcq_options": [
+        "Linear Search",
+        "Recursive Approach",
+        "Binary Search",
+        "Brute Force"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Add Strings, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.747161",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_crawler-log-folder",
+      "title": "Crawler Log Folder",
+      "description": "<p>The Leetcode file system keeps a log each time some user performs a <em>change folder</em> operation.</p>\n\n<p>The operations are described below:</p>\n\n<ul>\n\t<li><code>&quot;../&quot;</code> : Move to the parent folder of the current folder. (If you are already in the main folder, <strong>remain in the same folder</strong>).</li>\n\t<li><code>&quot;./&quot;</code> : Remain in the same folder.</li>\n\t<li><code>&quot;x/&quot;</code> : Move to the child folder named <code>x</code> (This folder is <strong>guaranteed to always exist</strong>).</li>\n</ul>\n\n<p>You are given a list of strings <code>logs</code> where <code>logs[i]</code> is the operation performed by the user at the <code>i<sup>th</sup></code> step.</p>\n\n<p>The file system starts in the main folder, then the operations in <code>logs</code> are performed.</p>\n\n<p>Return <em>the minimum number of operations needed to go back to the main folder after the change folder operations.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/09/sample_11_1957.png\" style=\"width: 775px; height: 151px;\" /></p>\n\n<pre>\n<strong>Input:</strong> logs = [&quot;d1/&quot;,&quot;d2/&quot;,&quot;../&quot;,&quot;d21/&quot;,&quot;./&quot;]\n<strong>Output:</strong> 2\n<strong>Explanation: </strong>Use this change folder operation &quot;../&quot; 2 times and go back to the main folder.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/09/sample_22_1957.png\" style=\"width: 600px; height: 270px;\" /></p>\n\n<pre>\n<strong>Input:</strong> logs = [&quot;d1/&quot;,&quot;d2/&quot;,&quot;./&quot;,&quot;d3/&quot;,&quot;../&quot;,&quot;d31/&quot;]\n<strong>Output:</strong> 3\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> logs = [&quot;d1/&quot;,&quot;../&quot;,&quot;../&quot;,&quot;../&quot;]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= logs.length &lt;= 10<sup>3</sup></code></li>\n\t<li><code>2 &lt;= logs[i].length &lt;= 10</code></li>\n\t<li><code>logs[i]</code> contains lowercase English letters, digits, <code>&#39;.&#39;</code>, and <code>&#39;/&#39;</code>.</li>\n\t<li><code>logs[i]</code> follows the format described in the statement.</li>\n\t<li>Folder names consist of lowercase English letters and digits.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "String",
+        "Stack"
+      ],
+      "acceptance_rate": 71.60852488571244,
+      "hints": [
+        "Simulate the process but don’t move the pointer beyond the main folder."
+      ],
+      "mcq_question": "How can you optimize the solution for 'Crawler Log Folder'?",
+      "mcq_options": [
+        "Divide and Conquer",
+        "Dynamic Programming",
+        "Brute Force",
+        "Greedy Algorithm"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Crawler Log Folder, Dynamic Programming is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.748165",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_duplicate-zeros",
+      "title": "Duplicate Zeros",
+      "description": "<p>Given a fixed-length integer array <code>arr</code>, duplicate each occurrence of zero, shifting the remaining elements to the right.</p>\n\n<p><strong>Note</strong> that elements beyond the length of the original array are not written. Do the above modifications to the input array in place and do not return anything.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,0,2,3,0,4,5,0]\n<strong>Output:</strong> [1,0,0,2,3,0,0,4]\n<strong>Explanation:</strong> After calling your function, the input array is modified to: [1,0,0,2,3,0,0,4]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,2,3]\n<strong>Output:</strong> [1,2,3]\n<strong>Explanation:</strong> After calling your function, the input array is modified to: [1,2,3]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= arr[i] &lt;= 9</code></li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Two Pointers"
+      ],
+      "acceptance_rate": 53.008398520872866,
+      "hints": [
+        "This is a great introductory problem for understanding and working with the concept of in-place operations. The problem statement clearly states that we are to modify the array in-place. That does not mean we cannot use another array. We just don't have to return anything.",
+        "A better way to solve this would be without using additional space. The only reason the problem statement allows you to make modifications in place is that it hints at avoiding any additional memory.",
+        "The main problem with not using additional memory is that we might override elements due to the zero duplication requirement of the problem statement. How do we get around that?",
+        "If we had enough space available, we would be able to accommodate all the elements properly. The new length would be the original length of the array plus the number of zeros. Can we use this information somehow to solve the problem?"
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Duplicate Zeros'?",
+      "mcq_options": [
+        "Brute Force",
+        "Linear Search",
+        "Binary Search",
+        "Recursive Approach"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Duplicate Zeros, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.749161",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_remove-element",
+      "title": "Remove Element",
+      "description": "<p>Given an integer array <code>nums</code> and an integer <code>val</code>, remove all occurrences of <code>val</code> in <code>nums</code> <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a>. The order of the elements may be changed. Then return <em>the number of elements in </em><code>nums</code><em> which are not equal to </em><code>val</code>.</p>\n\n<p>Consider the number of elements in <code>nums</code> which are not equal to <code>val</code> be <code>k</code>, to get accepted, you need to do the following things:</p>\n\n<ul>\n\t<li>Change the array <code>nums</code> such that the first <code>k</code> elements of <code>nums</code> contain the elements which are not equal to <code>val</code>. The remaining elements of <code>nums</code> are not important as well as the size of <code>nums</code>.</li>\n\t<li>Return <code>k</code>.</li>\n</ul>\n\n<p><strong>Custom Judge:</strong></p>\n\n<p>The judge will test your solution with the following code:</p>\n\n<pre>\nint[] nums = [...]; // Input array\nint val = ...; // Value to remove\nint[] expectedNums = [...]; // The expected answer with correct length.\n                            // It is sorted with no values equaling val.\n\nint k = removeElement(nums, val); // Calls your implementation\n\nassert k == expectedNums.length;\nsort(nums, 0, k); // Sort the first k elements of nums\nfor (int i = 0; i &lt; actualLength; i++) {\n    assert nums[i] == expectedNums[i];\n}\n</pre>\n\n<p>If all assertions pass, then your solution will be <strong>accepted</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,2,2,3], val = 3\n<strong>Output:</strong> 2, nums = [2,2,_,_]\n<strong>Explanation:</strong> Your function should return k = 2, with the first two elements of nums being 2.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,1,2,2,3,0,4,2], val = 2\n<strong>Output:</strong> 5, nums = [0,1,4,0,3,_,_,_]\n<strong>Explanation:</strong> Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.\nNote that the five elements can be returned in any order.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 50</code></li>\n\t<li><code>0 &lt;= val &lt;= 100</code></li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Two Pointers"
+      ],
+      "acceptance_rate": 60.608071927557795,
+      "hints": [
+        "The problem statement clearly asks us to modify the array in-place and it also says that the element beyond the new length of the array can be anything. Given an element, we need to remove all the occurrences of it from the array. We don't technically need to <b>remove</b> that element per-say, right?",
+        "We can move all the occurrences of this element to the end of the array. Use two pointers!\r\n<br><img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_remove_element.png\" width=\"500\"/>",
+        "Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us."
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Remove Element'?",
+      "mcq_options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Counting Sort",
+        "Heap Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Remove Element, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.749880",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_find-pivot-index",
+      "title": "Find Pivot Index",
+      "description": "<p>Given an array of integers <code>nums</code>, calculate the <strong>pivot index</strong> of this array.</p>\n\n<p>The <strong>pivot index</strong> is the index where the sum of all the numbers <strong>strictly</strong> to the left of the index is equal to the sum of all the numbers <strong>strictly</strong> to the index&#39;s right.</p>\n\n<p>If the index is on the left edge of the array, then the left sum is <code>0</code> because there are no elements to the left. This also applies to the right edge of the array.</p>\n\n<p>Return <em>the <strong>leftmost pivot index</strong></em>. If no such index exists, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,7,3,6,5,6]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong>\nThe pivot index is 3.\nLeft sum = nums[0] + nums[1] + nums[2] = 1 + 7 + 3 = 11\nRight sum = nums[4] + nums[5] = 5 + 6 = 11\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong>\nThere is no index that satisfies the conditions in the problem statement.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,1,-1]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong>\nThe pivot index is 0.\nLeft sum = 0 (no elements to the left of index 0)\nRight sum = nums[1] + nums[2] = 1 + -1 = 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Note:</strong> This question is the same as&nbsp;1991:&nbsp;<a href=\"https://leetcode.com/problems/find-the-middle-index-in-array/\" target=\"_blank\">https://leetcode.com/problems/find-the-middle-index-in-array/</a></p>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "acceptance_rate": 61.19170016427822,
+      "hints": [
+        "Create an array sumLeft where sumLeft[i] is the sum of all the numbers to the left of index i.",
+        "Create an array sumRight where sumRight[i] is the sum of all the numbers to the right of index i.",
+        "For each index i, check if sumLeft[i] equals sumRight[i]. If so, return i. If no such i is found, return -1."
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Find Pivot Index'?",
+      "mcq_options": [
+        "BFS",
+        "Dijkstra",
+        "DFS",
+        "Union Find"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Find Pivot Index, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.749880",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_employees-with-missing-information",
+      "title": "Employees With Missing Information",
+      "description": "<p>Table: <code>Employees</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| employee_id | int     |\n| name        | varchar |\n+-------------+---------+\nemployee_id is the column with unique values for this table.\nEach row of this table indicates the name of the employee whose ID is employee_id.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Salaries</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| employee_id | int     |\n| salary      | int     |\n+-------------+---------+\nemployee_id is the column with unique values for this table.\nEach row of this table indicates the salary of the employee whose ID is employee_id.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to report the IDs of all the employees with <strong>missing information</strong>. The information of an employee is missing if:</p>\n\n<ul>\n\t<li>The employee&#39;s <strong>name</strong> is missing, or</li>\n\t<li>The employee&#39;s <strong>salary</strong> is missing.</li>\n</ul>\n\n<p>Return the result table ordered by <code>employee_id</code> <strong>in ascending order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nEmployees table:\n+-------------+----------+\n| employee_id | name     |\n+-------------+----------+\n| 2           | Crew     |\n| 4           | Haven    |\n| 5           | Kristian |\n+-------------+----------+\nSalaries table:\n+-------------+--------+\n| employee_id | salary |\n+-------------+--------+\n| 5           | 76071  |\n| 1           | 22517  |\n| 4           | 63539  |\n+-------------+--------+\n<strong>Output:</strong> \n+-------------+\n| employee_id |\n+-------------+\n| 1           |\n| 2           |\n+-------------+\n<strong>Explanation:</strong> \nEmployees 1, 2, 4, and 5 are working at this company.\nThe name of employee 1 is missing.\nThe salary of employee 2 is missing.\n</pre>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Database"
+      ],
+      "acceptance_rate": 72.96363165051459,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Employees With Missing Information' efficiently?",
+      "mcq_options": [
+        "Merge Sort",
+        "Heap Sort",
+        "Counting Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Employees With Missing Information, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.750507",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-time-to-type-word-using-special-typewriter",
+      "title": "Minimum Time to Type Word Using Special Typewriter",
+      "description": "<p>There is a special typewriter with lowercase English letters <code>&#39;a&#39;</code> to <code>&#39;z&#39;</code> arranged in a <strong>circle</strong> with a <strong>pointer</strong>. A character can <strong>only</strong> be typed if the pointer is pointing to that character. The pointer is <strong>initially</strong> pointing to the character <code>&#39;a&#39;</code>.</p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/07/31/chart.jpg\" style=\"width: 530px; height: 410px;\" />\n<p>Each second, you may perform one of the following operations:</p>\n\n<ul>\n\t<li>Move the pointer one character <strong>counterclockwise</strong> or <strong>clockwise</strong>.</li>\n\t<li>Type the character the pointer is <strong>currently</strong> on.</li>\n</ul>\n\n<p>Given a string <code>word</code>, return the<strong> minimum</strong> number of seconds to type out the characters in <code>word</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> word = &quot;abc&quot;\n<strong>Output:</strong> 5\n<strong>Explanation: \n</strong>The characters are printed as follows:\n- Type the character &#39;a&#39; in 1 second since the pointer is initially on &#39;a&#39;.\n- Move the pointer clockwise to &#39;b&#39; in 1 second.\n- Type the character &#39;b&#39; in 1 second.\n- Move the pointer clockwise to &#39;c&#39; in 1 second.\n- Type the character &#39;c&#39; in 1 second.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> word = &quot;bza&quot;\n<strong>Output:</strong> 7\n<strong>Explanation:\n</strong>The characters are printed as follows:\n- Move the pointer clockwise to &#39;b&#39; in 1 second.\n- Type the character &#39;b&#39; in 1 second.\n- Move the pointer counterclockwise to &#39;z&#39; in 2 seconds.\n- Type the character &#39;z&#39; in 1 second.\n- Move the pointer clockwise to &#39;a&#39; in 1 second.\n- Type the character &#39;a&#39; in 1 second.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> word = &quot;zjpc&quot;\n<strong>Output:</strong> 34\n<strong>Explanation:</strong>\nThe characters are printed as follows:\n- Move the pointer counterclockwise to &#39;z&#39; in 1 second.\n- Type the character &#39;z&#39; in 1 second.\n- Move the pointer clockwise to &#39;j&#39; in 10 seconds.\n- Type the character &#39;j&#39; in 1 second.\n- Move the pointer clockwise to &#39;p&#39; in 6 seconds.\n- Type the character &#39;p&#39; in 1 second.\n- Move the pointer counterclockwise to &#39;c&#39; in 13 seconds.\n- Type the character &#39;c&#39; in 1 second.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word.length &lt;= 100</code></li>\n\t<li><code>word</code> consists of lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "String",
+        "Greedy"
+      ],
+      "acceptance_rate": 78.04423600988656,
+      "hints": [
+        "There are only two possible directions you can go when you move to the next letter.",
+        "When moving to the next letter, you will always go in the direction that takes the least amount of time."
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Minimum Time to Type Word Using Special Typewriter' efficiently?",
+      "mcq_options": [
+        "Heap Sort",
+        "Counting Sort",
+        "Merge Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Minimum Time to Type Word Using Special Typewriter, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.750507",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_single-number",
+      "title": "Single Number",
+      "description": "<p>Given a <strong>non-empty</strong>&nbsp;array of integers <code>nums</code>, every element appears <em>twice</em> except for one. Find that single one.</p>\n\n<p>You must&nbsp;implement a solution with a linear runtime complexity and use&nbsp;only constant&nbsp;extra space.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,1,2,1,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">4</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li>Each element in the array appears twice except for one element which appears only once.</li>\n</ul>\n",
+      "difficulty_category": "Easy",
+      "difficulty_level": 1,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Bit Manipulation"
+      ],
+      "acceptance_rate": 76.60898389858967,
+      "hints": [
+        "Think about the XOR (^) operator's property."
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Single Number'?",
+      "mcq_options": [
+        "Brute Force",
+        "Recursive Approach",
+        "Linear Search",
+        "Binary Search"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Single Number, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:05.750507",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_interval-list-intersections",
+      "title": "Interval List Intersections",
+      "description": "<p>You are given two lists of closed intervals, <code>firstList</code> and <code>secondList</code>, where <code>firstList[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> and <code>secondList[j] = [start<sub>j</sub>, end<sub>j</sub>]</code>. Each list of intervals is pairwise <strong>disjoint</strong> and in <strong>sorted order</strong>.</p>\n\n<p>Return <em>the intersection of these two interval lists</em>.</p>\n\n<p>A <strong>closed interval</strong> <code>[a, b]</code> (with <code>a &lt;= b</code>) denotes the set of real numbers <code>x</code> with <code>a &lt;= x &lt;= b</code>.</p>\n\n<p>The <strong>intersection</strong> of two closed intervals is a set of real numbers that are either empty or represented as a closed interval. For example, the intersection of <code>[1, 3]</code> and <code>[2, 4]</code> is <code>[2, 3]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/30/interval1.png\" style=\"width: 700px; height: 194px;\" />\n<pre>\n<strong>Input:</strong> firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]\n<strong>Output:</strong> [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> firstList = [[1,3],[5,9]], secondList = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= firstList.length, secondList.length &lt;= 1000</code></li>\n\t<li><code>firstList.length + secondList.length &gt;= 1</code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt; end<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n\t<li><code>end<sub>i</sub> &lt; start<sub>i+1</sub></code></li>\n\t<li><code>0 &lt;= start<sub>j</sub> &lt; end<sub>j</sub> &lt;= 10<sup>9</sup> </code></li>\n\t<li><code>end<sub>j</sub> &lt; start<sub>j+1</sub></code></li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Line Sweep"
+      ],
+      "acceptance_rate": 72.7964700445879,
+      "hints": [],
+      "mcq_question": "What is the optimal algorithm for 'Interval List Intersections'?",
+      "mcq_options": [
+        "Heap Sort",
+        "Merge Sort",
+        "Counting Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Interval List Intersections, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.492464",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_moving-stones-until-consecutive-ii",
+      "title": "Moving Stones Until Consecutive II",
+      "description": "<p>There are some stones in different positions on the X-axis. You are given an integer array <code>stones</code>, the positions of the stones.</p>\n\n<p>Call a stone an <strong>endpoint stone</strong> if it has the smallest or largest position. In one move, you pick up an <strong>endpoint stone</strong> and move it to an unoccupied position so that it is no longer an <strong>endpoint stone</strong>.</p>\n\n<ul>\n\t<li>In particular, if the stones are at say, <code>stones = [1,2,5]</code>, you cannot move the endpoint stone at position <code>5</code>, since moving it to any position (such as <code>0</code>, or <code>3</code>) will still keep that stone as an endpoint stone.</li>\n</ul>\n\n<p>The game ends when you cannot make any more moves (i.e., the stones are in three consecutive positions).</p>\n\n<p>Return <em>an integer array </em><code>answer</code><em> of length </em><code>2</code><em> where</em>:</p>\n\n<ul>\n\t<li><code>answer[0]</code> <em>is the minimum number of moves you can play, and</em></li>\n\t<li><code>answer[1]</code> <em>is the maximum number of moves you can play</em>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [7,4,9]\n<strong>Output:</strong> [1,2]\n<strong>Explanation:</strong> We can move 4 -&gt; 8 for one move to finish the game.\nOr, we can move 9 -&gt; 5, 4 -&gt; 6 for two moves to finish the game.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [6,5,4,3,10]\n<strong>Output:</strong> [2,3]\n<strong>Explanation:</strong> We can move 3 -&gt; 8 then 10 -&gt; 7 to finish the game.\nOr, we can move 3 -&gt; 7, 4 -&gt; 8, 5 -&gt; 9 to finish the game.\nNotice we cannot move 10 -&gt; 2 to finish the game, because that would be an illegal move.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= stones.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= stones[i] &lt;= 10<sup>9</sup></code></li>\n\t<li>All the values of <code>stones</code> are <strong>unique</strong>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Math",
+        "Sliding Window",
+        "Sorting"
+      ],
+      "acceptance_rate": 57.96272142045693,
+      "hints": [
+        "For the minimum, how many stones are already in place?\r\nFor the maximum, we have to lose either the gap A[1] - A[0] or A[N-1] - A[N-2]  (where N = A.length), but every other space can be occupied."
+      ],
+      "mcq_question": "Which approach reduces complexity in 'Moving Stones Until Consecutive II'?",
+      "mcq_options": [
+        "Dynamic Programming",
+        "Greedy Algorithm",
+        "Divide and Conquer",
+        "Brute Force"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Moving Stones Until Consecutive II, Dynamic Programming is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_linked-list-components",
+      "title": "Linked List Components",
+      "description": "<p>You are given the <code>head</code> of a linked list containing unique integer values and an integer array <code>nums</code> that is a subset of the linked list values.</p>\n\n<p>Return <em>the number of connected components in </em><code>nums</code><em> where two values are connected if they appear <strong>consecutively</strong> in the linked list</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/07/22/lc-linkedlistcom1.jpg\" style=\"width: 424px; height: 65px;\" />\n<pre>\n<strong>Input:</strong> head = [0,1,2,3], nums = [0,1,3]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> 0 and 1 are connected, so [0, 1] and [3] are the two connected components.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/07/22/lc-linkedlistcom2.jpg\" style=\"width: 544px; height: 65px;\" />\n<pre>\n<strong>Input:</strong> head = [0,1,2,3,4], nums = [0,3,1,4]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> 0 and 1 are connected, 3 and 4 are connected, so [0, 1] and [3, 4] are the two connected components.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the linked list is <code>n</code>.</li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= Node.val &lt; n</code></li>\n\t<li>All the values <code>Node.val</code> are <strong>unique</strong>.</li>\n\t<li><code>1 &lt;= nums.length &lt;= n</code></li>\n\t<li><code>0 &lt;= nums[i] &lt; n</code></li>\n\t<li>All the values of <code>nums</code> are <strong>unique</strong>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Linked List"
+      ],
+      "acceptance_rate": 57.44326927851433,
+      "hints": [],
+      "mcq_question": "Which data structure would be most helpful in solving 'Linked List Components'?",
+      "mcq_options": [
+        "Array",
+        "Linked List",
+        "Hash Map",
+        "Binary Tree"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Linked List Components, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_lowest-common-ancestor-of-a-binary-search-tree",
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "description": "<p>Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.</p>\n\n<p>According to the <a href=\"https://en.wikipedia.org/wiki/Lowest_common_ancestor\" target=\"_blank\">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes <code>p</code> and <code>q</code> as the lowest node in <code>T</code> that has both <code>p</code> and <code>q</code> as descendants (where we allow <strong>a node to be a descendant of itself</strong>).&rdquo;</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\" style=\"width: 200px; height: 190px;\" />\n<pre>\n<strong>Input:</strong> root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The LCA of nodes 2 and 8 is 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\" style=\"width: 200px; height: 190px;\" />\n<pre>\n<strong>Input:</strong> root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [2,1], p = 2, q = 1\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[2, 10<sup>5</sup>]</code>.</li>\n\t<li><code>-10<sup>9</sup> &lt;= Node.val &lt;= 10<sup>9</sup></code></li>\n\t<li>All <code>Node.val</code> are <strong>unique</strong>.</li>\n\t<li><code>p != q</code></li>\n\t<li><code>p</code> and <code>q</code> will exist in the BST.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "acceptance_rate": 69.16359192370908,
+      "hints": [],
+      "mcq_question": "Which data structure provides the best performance for 'Lowest Common Ancestor of a Binary Search Tree'?",
+      "mcq_options": [
+        "Linked List",
+        "Binary Tree",
+        "Hash Map",
+        "Array"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Lowest Common Ancestor of a Binary Search Tree, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-number-of-flips-to-make-the-binary-string-alternating",
+      "title": "Minimum Number of Flips to Make the Binary String Alternating",
+      "description": "<p>You are given a binary string <code>s</code>. You are allowed to perform two types of operations on the string in any sequence:</p>\n\n<ul>\n\t<li><strong>Type-1: Remove</strong> the character at the start of the string <code>s</code> and <strong>append</strong> it to the end of the string.</li>\n\t<li><strong>Type-2: Pick</strong> any character in <code>s</code> and <strong>flip</strong> its value, i.e., if its value is <code>&#39;0&#39;</code> it becomes <code>&#39;1&#39;</code> and vice-versa.</li>\n</ul>\n\n<p>Return <em>the <strong>minimum</strong> number of <strong>type-2</strong> operations you need to perform</em> <em>such that </em><code>s</code> <em>becomes <strong>alternating</strong>.</em></p>\n\n<p>The string is called <strong>alternating</strong> if no two adjacent characters are equal.</p>\n\n<ul>\n\t<li>For example, the strings <code>&quot;010&quot;</code> and <code>&quot;1010&quot;</code> are alternating, while the string <code>&quot;0100&quot;</code> is not.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;111000&quot;\n<strong>Output:</strong> 2\n<strong>Explanation</strong>: Use the first operation two times to make s = &quot;100011&quot;.\nThen, use the second operation on the third and sixth elements to make s = &quot;10<u>1</u>01<u>0</u>&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;010&quot;\n<strong>Output:</strong> 0\n<strong>Explanation</strong>: The string is already alternating.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1110&quot;\n<strong>Output:</strong> 1\n<strong>Explanation</strong>: Use the second operation on the second element to make s = &quot;1<u>0</u>10&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "String",
+        "Dynamic Programming",
+        "Sliding Window"
+      ],
+      "acceptance_rate": 40.72515415093898,
+      "hints": [
+        "Note what actually matters is how many 0s and 1s are in odd and even positions",
+        "For every cyclic shift we need to count how many 0s and 1s are at each parity and convert the minimum between them for each parity"
+      ],
+      "mcq_question": "Which data structure would be most helpful in solving 'Minimum Number of Flips to Make the Binary String Alternating'?",
+      "mcq_options": [
+        "Array",
+        "Linked List",
+        "Hash Map",
+        "Binary Tree"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Minimum Number of Flips to Make the Binary String Alternating, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_binary-tree-pruning",
+      "title": "Binary Tree Pruning",
+      "description": "<p>Given the <code>root</code> of a binary tree, return <em>the same tree where every subtree (of the given tree) not containing a </em><code>1</code><em> has been removed</em>.</p>\n\n<p>A subtree of a node <code>node</code> is <code>node</code> plus every node that is a descendant of <code>node</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/06/1028_2.png\" style=\"width: 500px; height: 140px;\" />\n<pre>\n<strong>Input:</strong> root = [1,null,0,0,1]\n<strong>Output:</strong> [1,null,0,null,1]\n<strong>Explanation:</strong> \nOnly the red nodes satisfy the property &quot;every subtree not containing a 1&quot;.\nThe diagram on the right represents the answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/06/1028_1.png\" style=\"width: 500px; height: 115px;\" />\n<pre>\n<strong>Input:</strong> root = [1,0,1,0,0,0,1]\n<strong>Output:</strong> [1,null,1,null,1]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/05/1028.png\" style=\"width: 500px; height: 134px;\" />\n<pre>\n<strong>Input:</strong> root = [1,1,0,1,1,0,1,0]\n<strong>Output:</strong> [1,1,0,1,1,null,1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 200]</code>.</li>\n\t<li><code>Node.val</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "acceptance_rate": 72.3931545472428,
+      "hints": [],
+      "mcq_question": "Which data structure would be most helpful in solving 'Binary Tree Pruning'?",
+      "mcq_options": [
+        "Hash Map",
+        "Binary Tree",
+        "Linked List",
+        "Array"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Binary Tree Pruning, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_delete-columns-to-make-sorted-ii",
+      "title": "Delete Columns to Make Sorted II",
+      "description": "<p>You are given an array of <code>n</code> strings <code>strs</code>, all of the same length.</p>\n\n<p>We may choose any deletion indices, and we delete all the characters in those indices for each string.</p>\n\n<p>For example, if we have <code>strs = [&quot;abcdef&quot;,&quot;uvwxyz&quot;]</code> and deletion indices <code>{0, 2, 3}</code>, then the final array after deletions is <code>[&quot;bef&quot;, &quot;vyz&quot;]</code>.</p>\n\n<p>Suppose we chose a set of deletion indices <code>answer</code> such that after deletions, the final array has its elements in <strong>lexicographic</strong> order (i.e., <code>strs[0] &lt;= strs[1] &lt;= strs[2] &lt;= ... &lt;= strs[n - 1]</code>). Return <em>the minimum possible value of</em> <code>answer.length</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;ca&quot;,&quot;bb&quot;,&quot;ac&quot;]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> \nAfter deleting the first column, strs = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;].\nNow strs is in lexicographic order (ie. strs[0] &lt;= strs[1] &lt;= strs[2]).\nWe require at least 1 deletion since initially strs was not in lexicographic order, so the answer is 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;xc&quot;,&quot;yb&quot;,&quot;za&quot;]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> \nstrs is already in lexicographic order, so we do not need to delete anything.\nNote that the rows of strs are not necessarily in lexicographic order:\ni.e., it is NOT necessarily true that (strs[0][0] &lt;= strs[0][1] &lt;= ...)\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;zyx&quot;,&quot;wvu&quot;,&quot;tsr&quot;]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> We have to delete every column.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == strs.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n\t<li><code>1 &lt;= strs[i].length &lt;= 100</code></li>\n\t<li><code>strs[i]</code> consists of lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "String",
+        "Greedy"
+      ],
+      "acceptance_rate": 35.90615384615385,
+      "hints": [],
+      "mcq_question": "What algorithm would be most suitable for solving 'Delete Columns to Make Sorted II'?",
+      "mcq_options": [
+        "Union Find",
+        "Dijkstra",
+        "BFS",
+        "DFS"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Delete Columns to Make Sorted II, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_valid-tic-tac-toe-state",
+      "title": "Valid Tic-Tac-Toe State",
+      "description": "<p>Given a Tic-Tac-Toe board as a string array <code>board</code>, return <code>true</code> if and only if it is possible to reach this board position during the course of a valid tic-tac-toe game.</p>\n\n<p>The board is a <code>3 x 3</code> array that consists of characters <code>&#39; &#39;</code>, <code>&#39;X&#39;</code>, and <code>&#39;O&#39;</code>. The <code>&#39; &#39;</code> character represents an empty square.</p>\n\n<p>Here are the rules of Tic-Tac-Toe:</p>\n\n<ul>\n\t<li>Players take turns placing characters into empty squares <code>&#39; &#39;</code>.</li>\n\t<li>The first player always places <code>&#39;X&#39;</code> characters, while the second player always places <code>&#39;O&#39;</code> characters.</li>\n\t<li><code>&#39;X&#39;</code> and <code>&#39;O&#39;</code> characters are always placed into empty squares, never filled ones.</li>\n\t<li>The game ends when there are three of the same (non-empty) character filling any row, column, or diagonal.</li>\n\t<li>The game also ends if all squares are non-empty.</li>\n\t<li>No more moves can be played if the game is over.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/15/tictactoe1-grid.jpg\" style=\"width: 253px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> board = [&quot;O  &quot;,&quot;   &quot;,&quot;   &quot;]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> The first player always plays &quot;X&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/15/tictactoe2-grid.jpg\" style=\"width: 253px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> board = [&quot;XOX&quot;,&quot; X &quot;,&quot;   &quot;]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> Players take turns making moves.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/15/tictactoe4-grid.jpg\" style=\"width: 253px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> board = [&quot;XOX&quot;,&quot;O O&quot;,&quot;XOX&quot;]\n<strong>Output:</strong> true\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>board.length == 3</code></li>\n\t<li><code>board[i].length == 3</code></li>\n\t<li><code>board[i][j]</code> is either <code>&#39;X&#39;</code>, <code>&#39;O&#39;</code>, or <code>&#39; &#39;</code>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Matrix"
+      ],
+      "acceptance_rate": 34.67348523387507,
+      "hints": [],
+      "mcq_question": "What is the optimal algorithm for 'Valid Tic-Tac-Toe State'?",
+      "mcq_options": [
+        "Linear Search",
+        "Recursive Approach",
+        "Brute Force",
+        "Binary Search"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Valid Tic-Tac-Toe State, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_construct-the-lexicographically-largest-valid-sequence",
+      "title": "Construct the Lexicographically Largest Valid Sequence",
+      "description": "<p>Given an integer <code>n</code>, find a sequence with elements in the range <code>[1, n]</code> that satisfies all of the following:</p>\n\n<ul>\n\t<li>The integer <code>1</code> occurs once in the sequence.</li>\n\t<li>Each integer between <code>2</code> and <code>n</code> occurs twice in the sequence.</li>\n\t<li>For every integer <code>i</code> between <code>2</code> and <code>n</code>, the <strong>distance</strong> between the two occurrences of <code>i</code> is exactly <code>i</code>.</li>\n</ul>\n\n<p>The <strong>distance</strong> between two numbers on the sequence, <code>a[i]</code> and <code>a[j]</code>, is the absolute difference of their indices, <code>|j - i|</code>.</p>\n\n<p>Return <em>the <strong>lexicographically largest</strong> sequence</em><em>. It is guaranteed that under the given constraints, there is always a solution. </em></p>\n\n<p>A sequence <code>a</code> is lexicographically larger than a sequence <code>b</code> (of the same length) if in the first position where <code>a</code> and <code>b</code> differ, sequence <code>a</code> has a number greater than the corresponding number in <code>b</code>. For example, <code>[0,1,9,0]</code> is lexicographically larger than <code>[0,1,5,6]</code> because the first position they differ is at the third number, and <code>9</code> is greater than <code>5</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> [3,1,2,3,2]\n<strong>Explanation:</strong> [2,3,2,1,3] is also a valid sequence, but [3,1,2,3,2] is the lexicographically largest valid sequence.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5\n<strong>Output:</strong> [5,3,1,4,3,5,2,4,2]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 20</code></li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Backtracking"
+      ],
+      "acceptance_rate": 72.93852827489353,
+      "hints": [
+        "Heuristic algorithm may work."
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Construct the Lexicographically Largest Valid Sequence' efficiently?",
+      "mcq_options": [
+        "Union Find",
+        "DFS",
+        "Dijkstra",
+        "BFS"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Construct the Lexicographically Largest Valid Sequence, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_longest-palindromic-subsequence",
+      "title": "Longest Palindromic Subsequence",
+      "description": "<p>Given a string <code>s</code>, find <em>the longest palindromic <strong>subsequence</strong>&#39;s length in</em> <code>s</code>.</p>\n\n<p>A <strong>subsequence</strong> is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;bbbab&quot;\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> One possible longest palindromic subsequence is &quot;bbbb&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cbbd&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> One possible longest palindromic subsequence is &quot;bb&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s</code> consists only of lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "acceptance_rate": 64.61224338693647,
+      "hints": [],
+      "mcq_question": "What algorithm would be most suitable for solving 'Longest Palindromic Subsequence'?",
+      "mcq_options": [
+        "Heap Sort",
+        "Merge Sort",
+        "Counting Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Longest Palindromic Subsequence, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_bulls-and-cows",
+      "title": "Bulls and Cows",
+      "description": "<p>You are playing the <strong><a href=\"https://en.wikipedia.org/wiki/Bulls_and_Cows\" target=\"_blank\">Bulls and Cows</a></strong> game with your friend.</p>\n\n<p>You write down a secret number and ask your friend to guess what the number is. When your friend makes a guess, you provide a hint with the following info:</p>\n\n<ul>\n\t<li>The number of &quot;bulls&quot;, which are digits in the guess that are in the correct position.</li>\n\t<li>The number of &quot;cows&quot;, which are digits in the guess that are in your secret number but are located in the wrong position. Specifically, the non-bull digits in the guess that could be rearranged such that they become bulls.</li>\n</ul>\n\n<p>Given the secret number <code>secret</code> and your friend&#39;s guess <code>guess</code>, return <em>the hint for your friend&#39;s guess</em>.</p>\n\n<p>The hint should be formatted as <code>&quot;xAyB&quot;</code>, where <code>x</code> is the number of bulls and <code>y</code> is the number of cows. Note that both <code>secret</code> and <code>guess</code> may contain duplicate digits.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> secret = &quot;1807&quot;, guess = &quot;7810&quot;\n<strong>Output:</strong> &quot;1A3B&quot;\n<strong>Explanation:</strong> Bulls are connected with a &#39;|&#39; and cows are underlined:\n&quot;1807&quot;\n  |\n&quot;<u>7</u>8<u>10</u>&quot;</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> secret = &quot;1123&quot;, guess = &quot;0111&quot;\n<strong>Output:</strong> &quot;1A1B&quot;\n<strong>Explanation:</strong> Bulls are connected with a &#39;|&#39; and cows are underlined:\n&quot;1123&quot;        &quot;1123&quot;\n  |      or     |\n&quot;01<u>1</u>1&quot;        &quot;011<u>1</u>&quot;\nNote that only one of the two unmatched 1s is counted as a cow since the non-bull digits can only be rearranged to allow one 1 to be a bull.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= secret.length, guess.length &lt;= 1000</code></li>\n\t<li><code>secret.length == guess.length</code></li>\n\t<li><code>secret</code> and <code>guess</code> consist of digits only.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "acceptance_rate": 51.72082740425428,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Bulls and Cows' efficiently?",
+      "mcq_options": [
+        "BFS",
+        "Dijkstra",
+        "DFS",
+        "Union Find"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Bulls and Cows, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.493782",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_vowel-spellchecker",
+      "title": "Vowel Spellchecker",
+      "description": "<p>Given a <code>wordlist</code>, we want to implement a spellchecker that converts a query word into a correct word.</p>\n\n<p>For a given <code>query</code> word, the spell checker handles two categories of spelling mistakes:</p>\n\n<ul>\n\t<li>Capitalization: If the query matches a word in the wordlist (<strong>case-insensitive</strong>), then the query word is returned with the same case as the case in the wordlist.\n\n\t<ul>\n\t\t<li>Example: <code>wordlist = [&quot;yellow&quot;]</code>, <code>query = &quot;YellOw&quot;</code>: <code>correct = &quot;yellow&quot;</code></li>\n\t\t<li>Example: <code>wordlist = [&quot;Yellow&quot;]</code>, <code>query = &quot;yellow&quot;</code>: <code>correct = &quot;Yellow&quot;</code></li>\n\t\t<li>Example: <code>wordlist = [&quot;yellow&quot;]</code>, <code>query = &quot;yellow&quot;</code>: <code>correct = &quot;yellow&quot;</code></li>\n\t</ul>\n\t</li>\n\t<li>Vowel Errors: If after replacing the vowels <code>(&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;)</code> of the query word with any vowel individually, it matches a word in the wordlist (<strong>case-insensitive</strong>), then the query word is returned with the same case as the match in the wordlist.\n\t<ul>\n\t\t<li>Example: <code>wordlist = [&quot;YellOw&quot;]</code>, <code>query = &quot;yollow&quot;</code>: <code>correct = &quot;YellOw&quot;</code></li>\n\t\t<li>Example: <code>wordlist = [&quot;YellOw&quot;]</code>, <code>query = &quot;yeellow&quot;</code>: <code>correct = &quot;&quot;</code> (no match)</li>\n\t\t<li>Example: <code>wordlist = [&quot;YellOw&quot;]</code>, <code>query = &quot;yllw&quot;</code>: <code>correct = &quot;&quot;</code> (no match)</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>In addition, the spell checker operates under the following precedence rules:</p>\n\n<ul>\n\t<li>When the query exactly matches a word in the wordlist (<strong>case-sensitive</strong>), you should return the same word back.</li>\n\t<li>When the query matches a word up to capitlization, you should return the first such match in the wordlist.</li>\n\t<li>When the query matches a word up to vowel errors, you should return the first such match in the wordlist.</li>\n\t<li>If the query has no matches in the wordlist, you should return the empty string.</li>\n</ul>\n\n<p>Given some <code>queries</code>, return a list of words <code>answer</code>, where <code>answer[i]</code> is the correct word for <code>query = queries[i]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]\n<strong>Output:</strong> [\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> wordlist = [\"yellow\"], queries = [\"YellOw\"]\n<strong>Output:</strong> [\"yellow\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= wordlist.length, queries.length &lt;= 5000</code></li>\n\t<li><code>1 &lt;= wordlist[i].length, queries[i].length &lt;= 7</code></li>\n\t<li><code>wordlist[i]</code> and <code>queries[i]</code> consist only of only English letters.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "acceptance_rate": 61.4828918631349,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Vowel Spellchecker' efficiently?",
+      "mcq_options": [
+        "Brute Force",
+        "Recursive Approach",
+        "Binary Search",
+        "Linear Search"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Vowel Spellchecker, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.500783",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_number-of-nodes-in-the-sub-tree-with-the-same-label",
+      "title": "Number of Nodes in the Sub-Tree With the Same Label",
+      "description": "<p>You are given a tree (i.e. a connected, undirected graph that has no cycles) consisting of <code>n</code> nodes numbered from <code>0</code> to <code>n - 1</code> and exactly <code>n - 1</code> <code>edges</code>. The <strong>root</strong> of the tree is the node <code>0</code>, and each node of the tree has <strong>a label</strong> which is a lower-case character given in the string <code>labels</code> (i.e. The node with the number <code>i</code> has the label <code>labels[i]</code>).</p>\n\n<p>The <code>edges</code> array is given on the form <code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code>, which means there is an edge between nodes <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code> in the tree.</p>\n\n<p>Return <em>an array of size <code>n</code></em> where <code>ans[i]</code> is the number of nodes in the subtree of the <code>i<sup>th</sup></code> node which have the same label as node <code>i</code>.</p>\n\n<p>A subtree of a tree <code>T</code> is the tree consisting of a node in <code>T</code> and all of its descendant nodes.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/01/q3e1.jpg\" style=\"width: 400px; height: 291px;\" />\n<pre>\n<strong>Input:</strong> n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], labels = &quot;abaedcd&quot;\n<strong>Output:</strong> [2,1,1,1,1,1,1]\n<strong>Explanation:</strong> Node 0 has label &#39;a&#39; and its sub-tree has node 2 with label &#39;a&#39; as well, thus the answer is 2. Notice that any node is part of its sub-tree.\nNode 1 has a label &#39;b&#39;. The sub-tree of node 1 contains nodes 1,4 and 5, as nodes 4 and 5 have different labels than node 1, the answer is just 1 (the node itself).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/01/q3e2.jpg\" style=\"width: 300px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> n = 4, edges = [[0,1],[1,2],[0,3]], labels = &quot;bbbb&quot;\n<strong>Output:</strong> [4,2,1,1]\n<strong>Explanation:</strong> The sub-tree of node 2 contains only node 2, so the answer is 1.\nThe sub-tree of node 3 contains only node 3, so the answer is 1.\nThe sub-tree of node 1 contains nodes 1 and 2, both have label &#39;b&#39;, thus the answer is 2.\nThe sub-tree of node 0 contains nodes 0, 1, 2 and 3, all with label &#39;b&#39;, thus the answer is 4.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/01/q3e3.jpg\" style=\"width: 300px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> n = 5, edges = [[0,1],[0,2],[1,3],[0,4]], labels = &quot;aabab&quot;\n<strong>Output:</strong> [3,2,1,1,1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>edges.length == n - 1</code></li>\n\t<li><code>edges[i].length == 2</code></li>\n\t<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub> &lt; n</code></li>\n\t<li><code>a<sub>i</sub> != b<sub>i</sub></code></li>\n\t<li><code>labels.length == n</code></li>\n\t<li><code>labels</code> is consisting of only of lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Hash Table",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Counting"
+      ],
+      "acceptance_rate": 55.171286966940805,
+      "hints": [
+        "Start traversing the tree and each node should return a vector to its parent node.",
+        "The vector should be of length 26 and have the count of all the labels in the sub-tree of this node."
+      ],
+      "mcq_question": "Which data structure provides the best performance for 'Number of Nodes in the Sub-Tree With the Same Label'?",
+      "mcq_options": [
+        "Hash Map",
+        "Array",
+        "Binary Tree",
+        "Linked List"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Number of Nodes in the Sub-Tree With the Same Label, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.500783",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_verify-preorder-serialization-of-a-binary-tree",
+      "title": "Verify Preorder Serialization of a Binary Tree",
+      "description": "<p>One way to serialize a binary tree is to use <strong>preorder traversal</strong>. When we encounter a non-null node, we record the node&#39;s value. If it is a null node, we record using a sentinel value such as <code>&#39;#&#39;</code>.</p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/12/pre-tree.jpg\" style=\"width: 362px; height: 293px;\" />\n<p>For example, the above binary tree can be serialized to the string <code>&quot;9,3,4,#,#,1,#,#,2,#,6,#,#&quot;</code>, where <code>&#39;#&#39;</code> represents a null node.</p>\n\n<p>Given a string of comma-separated values <code>preorder</code>, return <code>true</code> if it is a correct preorder traversal serialization of a binary tree.</p>\n\n<p>It is <strong>guaranteed</strong> that each comma-separated value in the string must be either an integer or a character <code>&#39;#&#39;</code> representing null pointer.</p>\n\n<p>You may assume that the input format is always valid.</p>\n\n<ul>\n\t<li>For example, it could never contain two consecutive commas, such as <code>&quot;1,,3&quot;</code>.</li>\n</ul>\n\n<p><strong>Note:&nbsp;</strong>You are not allowed to reconstruct the tree.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> preorder = \"9,3,4,#,#,1,#,#,2,#,6,#,#\"\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> preorder = \"1,#\"\n<strong>Output:</strong> false\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> preorder = \"9,#,#,1\"\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= preorder.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>preorder</code> consist of integers in the range <code>[0, 100]</code> and <code>&#39;#&#39;</code> separated by commas <code>&#39;,&#39;</code>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "String",
+        "Stack",
+        "Tree",
+        "Binary Tree"
+      ],
+      "acceptance_rate": 46.49967980864546,
+      "hints": [],
+      "mcq_question": "What is the key data structure needed for 'Verify Preorder Serialization of a Binary Tree'?",
+      "mcq_options": [
+        "Binary Tree",
+        "Linked List",
+        "Array",
+        "Hash Map"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Verify Preorder Serialization of a Binary Tree, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.501637",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_longest-subarray-of-1s-after-deleting-one-element",
+      "title": "Longest Subarray of 1's After Deleting One Element",
+      "description": "<p>Given a binary array <code>nums</code>, you should delete one element from it.</p>\n\n<p>Return <em>the size of the longest non-empty subarray containing only </em><code>1</code><em>&#39;s in the resulting array</em>. Return <code>0</code> if there is no such subarray.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,0,1]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> After deleting the number in position 2, [1,1,1] contains 3 numbers with value of 1&#39;s.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,1,1,1,0,1,1,0,1]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> After deleting the number in position 4, [0,1,1,1,1,1,0,1] longest subarray with value of 1&#39;s is [1,1,1,1,1].\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,1]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> You must delete one element.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Sliding Window"
+      ],
+      "acceptance_rate": 70.87842958453737,
+      "hints": [
+        "Maintain a sliding window where there is at most one zero in it."
+      ],
+      "mcq_question": "What is the key data structure needed for 'Longest Subarray of 1's After Deleting One Element'?",
+      "mcq_options": [
+        "Linked List",
+        "Array",
+        "Hash Map",
+        "Binary Tree"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Longest Subarray of 1's After Deleting One Element, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.501637",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_word-subsets",
+      "title": "Word Subsets",
+      "description": "<p>You are given two string arrays <code>words1</code> and <code>words2</code>.</p>\n\n<p>A string <code>b</code> is a <strong>subset</strong> of string <code>a</code> if every letter in <code>b</code> occurs in <code>a</code> including multiplicity.</p>\n\n<ul>\n\t<li>For example, <code>&quot;wrr&quot;</code> is a subset of <code>&quot;warrior&quot;</code> but is not a subset of <code>&quot;world&quot;</code>.</li>\n</ul>\n\n<p>A string <code>a</code> from <code>words1</code> is <strong>universal</strong> if for every string <code>b</code> in <code>words2</code>, <code>b</code> is a subset of <code>a</code>.</p>\n\n<p>Return an array of all the <strong>universal</strong> strings in <code>words1</code>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;e&quot;,&quot;o&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;lc&quot;,&quot;eo&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;leetcode&quot;]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">words1 = [&quot;acaac&quot;,&quot;cccbb&quot;,&quot;aacbb&quot;,&quot;caacc&quot;,&quot;bcbbb&quot;], words2 = [&quot;c&quot;,&quot;cc&quot;,&quot;b&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[&quot;cccbb&quot;]</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words1.length, words2.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= words1[i].length, words2[i].length &lt;= 10</code></li>\n\t<li><code>words1[i]</code> and <code>words2[i]</code> consist only of lowercase English letters.</li>\n\t<li>All the strings of <code>words1</code> are <strong>unique</strong>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "String"
+      ],
+      "acceptance_rate": 55.81941567133004,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Word Subsets' efficiently?",
+      "mcq_options": [
+        "Heap Sort",
+        "Merge Sort",
+        "Quick Sort",
+        "Counting Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Word Subsets, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.503323",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_maximum-non-negative-product-in-a-matrix",
+      "title": "Maximum Non Negative Product in a Matrix",
+      "description": "<p>You are given a <code>m x n</code> matrix <code>grid</code>. Initially, you are located at the top-left corner <code>(0, 0)</code>, and in each step, you can only <strong>move right or down</strong> in the matrix.</p>\n\n<p>Among all possible paths starting from the top-left corner <code>(0, 0)</code> and ending in the bottom-right corner <code>(m - 1, n - 1)</code>, find the path with the <strong>maximum non-negative product</strong>. The product of a path is the product of all integers in the grid cells visited along the path.</p>\n\n<p>Return the <em>maximum non-negative product <strong>modulo</strong> </em><code>10<sup>9</sup> + 7</code>. <em>If the maximum product is <strong>negative</strong>, return </em><code>-1</code>.</p>\n\n<p>Notice that the modulo is performed after getting the maximum product.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/23/product1.jpg\" style=\"width: 244px; height: 245px;\" />\n<pre>\n<strong>Input:</strong> grid = [[-1,-2,-3],[-2,-3,-3],[-3,-3,-2]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> It is not possible to get non-negative product in the path from (0, 0) to (2, 2), so return -1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/23/product2.jpg\" style=\"width: 244px; height: 245px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,-2,1],[1,-2,1],[3,-4,1]]\n<strong>Output:</strong> 8\n<strong>Explanation:</strong> Maximum non-negative product is shown (1 * 1 * -2 * -4 * 1 = 8).\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/12/23/product3.jpg\" style=\"width: 164px; height: 165px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,3],[0,-4]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Maximum non-negative product is shown (1 * 0 * -4 = 0).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 15</code></li>\n\t<li><code>-4 &lt;= grid[i][j] &lt;= 4</code></li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "acceptance_rate": 35.210937591527355,
+      "hints": [
+        "Use Dynamic programming. Keep the highest value and lowest value you can achieve up to a point."
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Maximum Non Negative Product in a Matrix'?",
+      "mcq_options": [
+        "DFS",
+        "Union Find",
+        "BFS",
+        "Dijkstra"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Maximum Non Negative Product in a Matrix, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.504325",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_construct-quad-tree",
+      "title": "Construct Quad Tree",
+      "description": "<p>Given a <code>n * n</code> matrix <code>grid</code> of <code>0&#39;s</code> and <code>1&#39;s</code> only. We want to represent <code>grid</code> with a Quad-Tree.</p>\n\n<p>Return <em>the root of the Quad-Tree representing </em><code>grid</code>.</p>\n\n<p>A Quad-Tree is a tree data structure in which each internal node has exactly four children. Besides, each node has two attributes:</p>\n\n<ul>\n\t<li><code>val</code>: True if the node represents a grid of 1&#39;s or False if the node represents a grid of 0&#39;s. Notice that you can assign the <code>val</code> to True or False when <code>isLeaf</code> is False, and both are accepted in the answer.</li>\n\t<li><code>isLeaf</code>: True if the node is a leaf node on the tree or False if the node has four children.</li>\n</ul>\n\n<pre>\nclass Node {\n    public boolean val;\n    public boolean isLeaf;\n    public Node topLeft;\n    public Node topRight;\n    public Node bottomLeft;\n    public Node bottomRight;\n}</pre>\n\n<p>We can construct a Quad-Tree from a two-dimensional area using the following steps:</p>\n\n<ol>\n\t<li>If the current grid has the same value (i.e all <code>1&#39;s</code> or all <code>0&#39;s</code>) set <code>isLeaf</code> True and set <code>val</code> to the value of the grid and set the four children to Null and stop.</li>\n\t<li>If the current grid has different values, set <code>isLeaf</code> to False and set <code>val</code> to any value and divide the current grid into four sub-grids as shown in the photo.</li>\n\t<li>Recurse for each of the children with the proper sub-grid.</li>\n</ol>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/11/new_top.png\" style=\"width: 777px; height: 181px;\" />\n<p>If you want to know more about the Quad-Tree, you can refer to the <a href=\"https://en.wikipedia.org/wiki/Quadtree\">wiki</a>.</p>\n\n<p><strong>Quad-Tree format:</strong></p>\n\n<p>You don&#39;t need to read this section for solving the problem. This is only if you want to understand the output format here. The output represents the serialized format of a Quad-Tree using level order traversal, where <code>null</code> signifies a path terminator where no node exists below.</p>\n\n<p>It is very similar to the serialization of the binary tree. The only difference is that the node is represented as a list <code>[isLeaf, val]</code>.</p>\n\n<p>If the value of <code>isLeaf</code> or <code>val</code> is True we represent it as <strong>1</strong> in the list <code>[isLeaf, val]</code> and if the value of <code>isLeaf</code> or <code>val</code> is False we represent it as <strong>0</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/11/grid1.png\" style=\"width: 777px; height: 99px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,1],[1,0]]\n<strong>Output:</strong> [[0,1],[1,0],[1,1],[1,1],[1,0]]\n<strong>Explanation:</strong> The explanation of this example is shown below:\nNotice that 0 represents False and 1 represents True in the photo representing the Quad-Tree.\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/12/e1tree.png\" style=\"width: 777px; height: 186px;\" />\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/12/e2mat.png\" style=\"width: 777px; height: 343px;\" /></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0]]\n<strong>Output:</strong> [[0,1],[1,1],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]\n<strong>Explanation:</strong> All values in the grid are not the same. We divide the grid into four sub-grids.\nThe topLeft, bottomLeft and bottomRight each has the same value.\nThe topRight have different values so we divide it into 4 sub-grids where each has the same value.\nExplanation is shown in the photo below:\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/02/12/e2tree.png\" style=\"width: 777px; height: 328px;\" />\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == grid.length == grid[i].length</code></li>\n\t<li><code>n == 2<sup>x</sup></code> where <code>0 &lt;= x &lt;= 6</code></li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Divide and Conquer",
+        "Tree",
+        "Matrix"
+      ],
+      "acceptance_rate": 77.57902506615099,
+      "hints": [],
+      "mcq_question": "Which data structure would be most helpful in solving 'Construct Quad Tree'?",
+      "mcq_options": [
+        "Array",
+        "Binary Tree",
+        "Hash Map",
+        "Linked List"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Construct Quad Tree, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.504325",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-speed-to-arrive-on-time",
+      "title": "Minimum Speed to Arrive on Time",
+      "description": "<p>You are given a floating-point number <code>hour</code>, representing the amount of time you have to reach the office. To commute to the office, you must take <code>n</code> trains in sequential order. You are also given an integer array <code>dist</code> of length <code>n</code>, where <code>dist[i]</code> describes the distance (in kilometers) of the <code>i<sup>th</sup></code> train ride.</p>\n\n<p>Each train can only depart at an integer hour, so you may need to wait in between each train ride.</p>\n\n<ul>\n\t<li>For example, if the <code>1<sup>st</sup></code> train ride takes <code>1.5</code> hours, you must wait for an additional <code>0.5</code> hours before you can depart on the <code>2<sup>nd</sup></code> train ride at the 2 hour mark.</li>\n</ul>\n\n<p>Return <em>the <strong>minimum positive integer</strong> speed <strong>(in kilometers per hour)</strong> that all the trains must travel at for you to reach the office on time, or </em><code>-1</code><em> if it is impossible to be on time</em>.</p>\n\n<p>Tests are generated such that the answer will not exceed <code>10<sup>7</sup></code> and <code>hour</code> will have <strong>at most two digits after the decimal point</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> dist = [1,3,2], hour = 6\n<strong>Output:</strong> 1\n<strong>Explanation: </strong>At speed 1:\n- The first train ride takes 1/1 = 1 hour.\n- Since we are already at an integer hour, we depart immediately at the 1 hour mark. The second train takes 3/1 = 3 hours.\n- Since we are already at an integer hour, we depart immediately at the 4 hour mark. The third train takes 2/1 = 2 hours.\n- You will arrive at exactly the 6 hour mark.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> dist = [1,3,2], hour = 2.7\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>At speed 3:\n- The first train ride takes 1/3 = 0.33333 hours.\n- Since we are not at an integer hour, we wait until the 1 hour mark to depart. The second train ride takes 3/3 = 1 hour.\n- Since we are already at an integer hour, we depart immediately at the 2 hour mark. The third train takes 2/3 = 0.66667 hours.\n- You will arrive at the 2.66667 hour mark.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> dist = [1,3,2], hour = 1.9\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> It is impossible because the earliest the third train can depart is at the 2 hour mark.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == dist.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= dist[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= hour &lt;= 10<sup>9</sup></code></li>\n\t<li>There will be at most two digits after the decimal point in <code>hour</code>.</li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "acceptance_rate": 47.43640299696602,
+      "hints": [
+        "Given the speed the trains are traveling at, can you find the total time it takes for you to arrive?",
+        "Is there a cutoff where any speeds larger will always allow you to arrive on time?"
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Minimum Speed to Arrive on Time'?",
+      "mcq_options": [
+        "Merge Sort",
+        "Heap Sort",
+        "Counting Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Minimum Speed to Arrive on Time, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.505321",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_find-valid-matrix-given-row-and-column-sums",
+      "title": "Find Valid Matrix Given Row and Column Sums",
+      "description": "<p>You are given two arrays <code>rowSum</code> and <code>colSum</code> of non-negative integers where <code>rowSum[i]</code> is the sum of the elements in the <code>i<sup>th</sup></code> row and <code>colSum[j]</code> is the sum of the elements of the <code>j<sup>th</sup></code> column of a 2D matrix. In other words, you do not know the elements of the matrix, but you do know the sums of each row and column.</p>\n\n<p>Find any matrix of <strong>non-negative</strong> integers of size <code>rowSum.length x colSum.length</code> that satisfies the <code>rowSum</code> and <code>colSum</code> requirements.</p>\n\n<p>Return <em>a 2D array representing <strong>any</strong> matrix that fulfills the requirements</em>. It&#39;s guaranteed that <strong>at least one </strong>matrix that fulfills the requirements exists.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> rowSum = [3,8], colSum = [4,7]\n<strong>Output:</strong> [[3,0],\n         [1,7]]\n<strong>Explanation:</strong> \n0<sup>th</sup> row: 3 + 0 = 3 == rowSum[0]\n1<sup>st</sup> row: 1 + 7 = 8 == rowSum[1]\n0<sup>th</sup> column: 3 + 1 = 4 == colSum[0]\n1<sup>st</sup> column: 0 + 7 = 7 == colSum[1]\nThe row and column sums match, and all matrix elements are non-negative.\nAnother possible matrix is: [[1,2],\n                             [3,5]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> rowSum = [5,7,10], colSum = [8,6,8]\n<strong>Output:</strong> [[0,5,0],\n         [6,1,0],\n         [2,0,8]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= rowSum.length, colSum.length &lt;= 500</code></li>\n\t<li><code>0 &lt;= rowSum[i], colSum[i] &lt;= 10<sup>8</sup></code></li>\n\t<li><code>sum(rowSum) == sum(colSum)</code></li>\n</ul>\n",
+      "difficulty_category": "Medium",
+      "difficulty_level": 2,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Greedy",
+        "Matrix"
+      ],
+      "acceptance_rate": 82.81766564162845,
+      "hints": [
+        "Find the smallest rowSum or colSum, and let it be x. Place that number in the grid, and subtract x from rowSum and colSum. Continue until all the sums are satisfied."
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Find Valid Matrix Given Row and Column Sums' efficiently?",
+      "mcq_options": [
+        "Binary Search",
+        "Brute Force",
+        "Recursive Approach",
+        "Linear Search"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Find Valid Matrix Given Row and Column Sums, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:13:35.506153",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_cut-off-trees-for-golf-event",
+      "title": "Cut Off Trees for Golf Event",
+      "description": "<p>You are asked to cut off all the trees in a forest for a golf event. The forest is represented as an <code>m x n</code> matrix. In this matrix:</p>\n\n<ul>\n\t<li><code>0</code> means the cell cannot be walked through.</li>\n\t<li><code>1</code> represents an empty cell that can be walked through.</li>\n\t<li>A number greater than <code>1</code> represents a tree in a cell that can be walked through, and this number is the tree&#39;s height.</li>\n</ul>\n\n<p>In one step, you can walk in any of the four directions: north, east, south, and west. If you are standing in a cell with a tree, you can choose whether to cut it off.</p>\n\n<p>You must cut off the trees in order from shortest to tallest. When you cut off a tree, the value at its cell becomes <code>1</code> (an empty cell).</p>\n\n<p>Starting from the point <code>(0, 0)</code>, return <em>the minimum steps you need to walk to cut off all the trees</em>. If you cannot cut off all the trees, return <code>-1</code>.</p>\n\n<p><strong>Note:</strong> The input is generated such that no two trees have the same height, and there is at least one tree needs to be cut off.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/26/trees1.jpg\" style=\"width: 242px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> forest = [[1,2,3],[0,0,4],[7,6,5]]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Following the path above allows you to cut off the trees from shortest to tallest in 6 steps.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/26/trees2.jpg\" style=\"width: 242px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> forest = [[1,2,3],[0,0,0],[7,6,5]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> The trees in the bottom row cannot be accessed as the middle row is blocked.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> forest = [[2,3,4],[0,0,5],[8,7,6]]\n<strong>Output:</strong> 6\n<b>Explanation:</b> You can follow the same path as Example 1 to cut off all the trees.\nNote that you can cut off the first tree at (0, 0) before making any steps.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == forest.length</code></li>\n\t<li><code>n == forest[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>0 &lt;= forest[i][j] &lt;= 10<sup>9</sup></code></li>\n\t<li>Heights of all trees are <strong>distinct</strong>.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Breadth-First Search",
+        "Heap (Priority Queue)",
+        "Matrix"
+      ],
+      "acceptance_rate": 35.660007625533126,
+      "hints": [],
+      "mcq_question": "Which data structure provides the best performance for 'Cut Off Trees for Golf Event'?",
+      "mcq_options": [
+        "Array",
+        "Linked List",
+        "Hash Map",
+        "Binary Tree"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Cut Off Trees for Golf Event, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_the-skyline-problem",
+      "title": "The Skyline Problem",
+      "description": "<p>A city&#39;s <strong>skyline</strong> is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. Given the locations and heights of all the buildings, return <em>the <strong>skyline</strong> formed by these buildings collectively</em>.</p>\n\n<p>The geometric information of each building is given in the array <code>buildings</code> where <code>buildings[i] = [left<sub>i</sub>, right<sub>i</sub>, height<sub>i</sub>]</code>:</p>\n\n<ul>\n\t<li><code>left<sub>i</sub></code> is the x coordinate of the left edge of the <code>i<sup>th</sup></code> building.</li>\n\t<li><code>right<sub>i</sub></code> is the x coordinate of the right edge of the <code>i<sup>th</sup></code> building.</li>\n\t<li><code>height<sub>i</sub></code> is the height of the <code>i<sup>th</sup></code> building.</li>\n</ul>\n\n<p>You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height <code>0</code>.</p>\n\n<p>The <strong>skyline</strong> should be represented as a list of &quot;key points&quot; <strong>sorted by their x-coordinate</strong> in the form <code>[[x<sub>1</sub>,y<sub>1</sub>],[x<sub>2</sub>,y<sub>2</sub>],...]</code>. Each key point is the left endpoint of some horizontal segment in the skyline except the last point in the list, which always has a y-coordinate <code>0</code> and is used to mark the skyline&#39;s termination where the rightmost building ends. Any ground between the leftmost and rightmost buildings should be part of the skyline&#39;s contour.</p>\n\n<p><b>Note:</b> There must be no consecutive horizontal lines of equal height in the output skyline. For instance, <code>[...,[2 3],[4 5],[7 5],[11 5],[12 7],...]</code> is not acceptable; the three lines of height 5 should be merged into one in the final output as such: <code>[...,[2 3],[4 5],[12 7],...]</code></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/12/01/merged.jpg\" style=\"width: 800px; height: 331px;\" />\n<pre>\n<strong>Input:</strong> buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]\n<strong>Output:</strong> [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]\n<strong>Explanation:</strong>\nFigure A shows the buildings of the input.\nFigure B shows the skyline formed by those buildings. The red points in figure B represent the key points in the output list.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> buildings = [[0,2,3],[2,5,3]]\n<strong>Output:</strong> [[0,3],[5,0]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= buildings.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= left<sub>i</sub> &lt; right<sub>i</sub> &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>1 &lt;= height<sub>i</sub> &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>buildings</code> is sorted by <code>left<sub>i</sub></code> in&nbsp;non-decreasing order.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Divide and Conquer",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Line Sweep",
+        "Heap (Priority Queue)",
+        "Ordered Set"
+      ],
+      "acceptance_rate": 44.31396330100448,
+      "hints": [],
+      "mcq_question": "What is the optimal algorithm for 'The Skyline Problem'?",
+      "mcq_options": [
+        "Dijkstra",
+        "DFS",
+        "BFS",
+        "Union Find"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For The Skyline Problem, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_find-minimum-in-rotated-sorted-array-ii",
+      "title": "Find Minimum in Rotated Sorted Array II",
+      "description": "<p>Suppose an array of length <code>n</code> sorted in ascending order is <strong>rotated</strong> between <code>1</code> and <code>n</code> times. For example, the array <code>nums = [0,1,4,4,5,6,7]</code> might become:</p>\n\n<ul>\n\t<li><code>[4,5,6,7,0,1,4]</code> if it was rotated <code>4</code> times.</li>\n\t<li><code>[0,1,4,4,5,6,7]</code> if it was rotated <code>7</code> times.</li>\n</ul>\n\n<p>Notice that <strong>rotating</strong> an array <code>[a[0], a[1], a[2], ..., a[n-1]]</code> 1 time results in the array <code>[a[n-1], a[0], a[1], a[2], ..., a[n-2]]</code>.</p>\n\n<p>Given the sorted rotated array <code>nums</code> that may contain <strong>duplicates</strong>, return <em>the minimum element of this array</em>.</p>\n\n<p>You must decrease the overall operation steps as much as possible.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,3,5]\n<strong>Output:</strong> 1\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [2,2,2,0,1]\n<strong>Output:</strong> 0\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 5000</code></li>\n\t<li><code>-5000 &lt;= nums[i] &lt;= 5000</code></li>\n\t<li><code>nums</code> is sorted and rotated between <code>1</code> and <code>n</code> times.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> This problem is similar to&nbsp;<a href=\"https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/\" target=\"_blank\">Find Minimum in Rotated Sorted Array</a>, but&nbsp;<code>nums</code> may contain <strong>duplicates</strong>. Would this affect the runtime complexity? How and why?</p>\n\n<p>&nbsp;</p>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "acceptance_rate": 44.236302587398775,
+      "hints": [],
+      "mcq_question": "Which approach would you choose to solve 'Find Minimum in Rotated Sorted Array II' efficiently?",
+      "mcq_options": [
+        "Merge Sort",
+        "Heap Sort",
+        "Quick Sort",
+        "Counting Sort"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Find Minimum in Rotated Sorted Array II, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_design-movie-rental-system",
+      "title": "Design Movie Rental System",
+      "description": "<p>You have a movie renting company consisting of <code>n</code> shops. You want to implement a renting system that supports searching for, booking, and returning movies. The system should also support generating a report of the currently rented movies.</p>\n\n<p>Each movie is given as a 2D integer array <code>entries</code> where <code>entries[i] = [shop<sub>i</sub>, movie<sub>i</sub>, price<sub>i</sub>]</code> indicates that there is a copy of movie <code>movie<sub>i</sub></code> at shop <code>shop<sub>i</sub></code> with a rental price of <code>price<sub>i</sub></code>. Each shop carries <strong>at most one</strong> copy of a movie <code>movie<sub>i</sub></code>.</p>\n\n<p>The system should support the following functions:</p>\n\n<ul>\n\t<li><strong>Search</strong>: Finds the <strong>cheapest 5 shops</strong> that have an <strong>unrented copy</strong> of a given movie. The shops should be sorted by <strong>price</strong> in ascending order, and in case of a tie, the one with the <strong>smaller </strong><code>shop<sub>i</sub></code> should appear first. If there are less than 5 matching shops, then all of them should be returned. If no shop has an unrented copy, then an empty list should be returned.</li>\n\t<li><strong>Rent</strong>: Rents an <strong>unrented copy</strong> of a given movie from a given shop.</li>\n\t<li><strong>Drop</strong>: Drops off a <strong>previously rented copy</strong> of a given movie at a given shop.</li>\n\t<li><strong>Report</strong>: Returns the <strong>cheapest 5 rented movies</strong> (possibly of the same movie ID) as a 2D list <code>res</code> where <code>res[j] = [shop<sub>j</sub>, movie<sub>j</sub>]</code> describes that the <code>j<sup>th</sup></code> cheapest rented movie <code>movie<sub>j</sub></code> was rented from the shop <code>shop<sub>j</sub></code>. The movies in <code>res</code> should be sorted by <strong>price </strong>in ascending order, and in case of a tie, the one with the <strong>smaller </strong><code>shop<sub>j</sub></code> should appear first, and if there is still tie, the one with the <strong>smaller </strong><code>movie<sub>j</sub></code> should appear first. If there are fewer than 5 rented movies, then all of them should be returned. If no movies are currently being rented, then an empty list should be returned.</li>\n</ul>\n\n<p>Implement the <code>MovieRentingSystem</code> class:</p>\n\n<ul>\n\t<li><code>MovieRentingSystem(int n, int[][] entries)</code> Initializes the <code>MovieRentingSystem</code> object with <code>n</code> shops and the movies in <code>entries</code>.</li>\n\t<li><code>List&lt;Integer&gt; search(int movie)</code> Returns a list of shops that have an <strong>unrented copy</strong> of the given <code>movie</code> as described above.</li>\n\t<li><code>void rent(int shop, int movie)</code> Rents the given <code>movie</code> from the given <code>shop</code>.</li>\n\t<li><code>void drop(int shop, int movie)</code> Drops off a previously rented <code>movie</code> at the given <code>shop</code>.</li>\n\t<li><code>List&lt;List&lt;Integer&gt;&gt; report()</code> Returns a list of cheapest <strong>rented</strong> movies as described above.</li>\n</ul>\n\n<p><strong>Note:</strong> The test cases will be generated such that <code>rent</code> will only be called if the shop has an <strong>unrented</strong> copy of the movie, and <code>drop</code> will only be called if the shop had <strong>previously rented</strong> out the movie.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MovieRentingSystem&quot;, &quot;search&quot;, &quot;rent&quot;, &quot;rent&quot;, &quot;report&quot;, &quot;drop&quot;, &quot;search&quot;]\n[[3, [[0, 1, 5], [0, 2, 6], [0, 3, 7], [1, 1, 4], [1, 2, 7], [2, 1, 5]]], [1], [0, 1], [1, 2], [], [1, 2], [2]]\n<strong>Output</strong>\n[null, [1, 0, 2], null, null, [[0, 1], [1, 2]], null, [0, 1]]\n\n<strong>Explanation</strong>\nMovieRentingSystem movieRentingSystem = new MovieRentingSystem(3, [[0, 1, 5], [0, 2, 6], [0, 3, 7], [1, 1, 4], [1, 2, 7], [2, 1, 5]]);\nmovieRentingSystem.search(1);  // return [1, 0, 2], Movies of ID 1 are unrented at shops 1, 0, and 2. Shop 1 is cheapest; shop 0 and 2 are the same price, so order by shop number.\nmovieRentingSystem.rent(0, 1); // Rent movie 1 from shop 0. Unrented movies at shop 0 are now [2,3].\nmovieRentingSystem.rent(1, 2); // Rent movie 2 from shop 1. Unrented movies at shop 1 are now [1].\nmovieRentingSystem.report();   // return [[0, 1], [1, 2]]. Movie 1 from shop 0 is cheapest, followed by movie 2 from shop 1.\nmovieRentingSystem.drop(1, 2); // Drop off movie 2 at shop 1. Unrented movies at shop 1 are now [1,2].\nmovieRentingSystem.search(2);  // return [0, 1]. Movies of ID 2 are unrented at shops 0 and 1. Shop 0 is cheapest, followed by shop 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 3 * 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= entries.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= shop<sub>i</sub> &lt; n</code></li>\n\t<li><code>1 &lt;= movie<sub>i</sub>, price<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n\t<li>Each shop carries <strong>at most one</strong> copy of a movie <code>movie<sub>i</sub></code>.</li>\n\t<li>At most <code>10<sup>5</sup></code> calls <strong>in total</strong> will be made to <code>search</code>, <code>rent</code>, <code>drop</code> and <code>report</code>.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Design",
+        "Heap (Priority Queue)",
+        "Ordered Set"
+      ],
+      "acceptance_rate": 54.137868131422664,
+      "hints": [
+        "You need to maintain a sorted list for each movie and a sorted list for rented movies",
+        "When renting a movie remove it from its movies sorted list and added it to the rented list and vice versa in the case of dropping a movie"
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Design Movie Rental System'?",
+      "mcq_options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Heap Sort",
+        "Counting Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Design Movie Rental System, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_remove-max-number-of-edges-to-keep-graph-fully-traversable",
+      "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "description": "<p>Alice and Bob have an undirected graph of <code>n</code> nodes and three types of edges:</p>\n\n<ul>\n\t<li>Type 1: Can be traversed by Alice only.</li>\n\t<li>Type 2: Can be traversed by Bob only.</li>\n\t<li>Type 3: Can be traversed by both Alice and Bob.</li>\n</ul>\n\n<p>Given an array <code>edges</code> where <code>edges[i] = [type<sub>i</sub>, u<sub>i</sub>, v<sub>i</sub>]</code> represents a bidirectional edge of type <code>type<sub>i</sub></code> between nodes <code>u<sub>i</sub></code> and <code>v<sub>i</sub></code>, find the maximum number of edges you can remove so that after removing the edges, the graph can still be fully traversed by both Alice and Bob. The graph is fully traversed by Alice and Bob if starting from any node, they can reach all other nodes.</p>\n\n<p>Return <em>the maximum number of edges you can remove, or return</em> <code>-1</code> <em>if Alice and Bob cannot fully traverse the graph.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/19/ex1.png\" style=\"width: 179px; height: 191px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]\n<strong>Output:</strong> 2\n<strong>Explanation: </strong>If we remove the 2 edges [1,1,2] and [1,1,3]. The graph will still be fully traversable by Alice and Bob. Removing any additional edge will not make it so. So the maximum number of edges we can remove is 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/19/ex2.png\" style=\"width: 178px; height: 190px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, edges = [[3,1,2],[3,2,3],[1,1,4],[2,1,4]]\n<strong>Output:</strong> 0\n<strong>Explanation: </strong>Notice that removing any edge will not make the graph fully traversable by Alice and Bob.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/19/ex3.png\" style=\"width: 178px; height: 190px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, edges = [[3,2,3],[1,1,2],[2,3,4]]\n<strong>Output:</strong> -1\n<b>Explanation: </b>In the current graph, Alice cannot reach node 4 from the other nodes. Likewise, Bob cannot reach 1. Therefore it&#39;s impossible to make the graph fully traversable.</pre>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= edges.length &lt;= min(10<sup>5</sup>, 3 * n * (n - 1) / 2)</code></li>\n\t<li><code>edges[i].length == 3</code></li>\n\t<li><code>1 &lt;= type<sub>i</sub> &lt;= 3</code></li>\n\t<li><code>1 &lt;= u<sub>i</sub> &lt; v<sub>i</sub> &lt;= n</code></li>\n\t<li>All tuples <code>(type<sub>i</sub>, u<sub>i</sub>, v<sub>i</sub>)</code> are distinct.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Union Find",
+        "Graph"
+      ],
+      "acceptance_rate": 70.31923639936633,
+      "hints": [
+        "Build the network instead of removing extra edges.",
+        "Suppose you have the final graph (after removing extra edges). Consider the subgraph with only the edges that Alice can traverse. What structure does this subgraph have? How many edges are there?",
+        "Use disjoint set union data structure for both Alice and Bob.",
+        "Always use Type 3 edges first, and connect the still isolated ones using other edges."
+      ],
+      "mcq_question": "Which data structure would be most helpful in solving 'Remove Max Number of Edges to Keep Graph Fully Traversable'?",
+      "mcq_options": [
+        "Array",
+        "Linked List",
+        "Binary Tree",
+        "Hash Map"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Remove Max Number of Edges to Keep Graph Fully Traversable, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_create-sorted-array-through-instructions",
+      "title": "Create Sorted Array through Instructions",
+      "description": "<p>Given an integer array <code>instructions</code>, you are asked to create a sorted array from the elements in <code>instructions</code>. You start with an empty container <code>nums</code>. For each element from <strong>left to right</strong> in <code>instructions</code>, insert it into <code>nums</code>. The <strong>cost</strong> of each insertion is the <b>minimum</b> of the following:</p>\r\n\r\n<ul>\r\n\t<li>The number of elements currently in <code>nums</code> that are <strong>strictly less than</strong> <code>instructions[i]</code>.</li>\r\n\t<li>The number of elements currently in <code>nums</code> that are <strong>strictly greater than</strong> <code>instructions[i]</code>.</li>\r\n</ul>\r\n\r\n<p>For example, if inserting element <code>3</code> into <code>nums = [1,2,3,5]</code>, the <strong>cost</strong> of insertion is <code>min(2, 1)</code> (elements <code>1</code> and <code>2</code> are less than <code>3</code>, element <code>5</code> is greater than <code>3</code>) and <code>nums</code> will become <code>[1,2,3,3,5]</code>.</p>\r\n\r\n<p>Return <em>the <strong>total cost</strong> to insert all elements from </em><code>instructions</code><em> into </em><code>nums</code>. Since the answer may be large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> instructions = [1,5,6,2]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> Begin with nums = [].\r\nInsert 1 with cost min(0, 0) = 0, now nums = [1].\r\nInsert 5 with cost min(1, 0) = 0, now nums = [1,5].\r\nInsert 6 with cost min(2, 0) = 0, now nums = [1,5,6].\r\nInsert 2 with cost min(1, 2) = 1, now nums = [1,2,5,6].\r\nThe total cost is 0 + 0 + 0 + 1 = 1.</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> instructions = [1,2,3,6,5,4]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> Begin with nums = [].\r\nInsert 1 with cost min(0, 0) = 0, now nums = [1].\r\nInsert 2 with cost min(1, 0) = 0, now nums = [1,2].\r\nInsert 3 with cost min(2, 0) = 0, now nums = [1,2,3].\r\nInsert 6 with cost min(3, 0) = 0, now nums = [1,2,3,6].\r\nInsert 5 with cost min(3, 1) = 1, now nums = [1,2,3,5,6].\r\nInsert 4 with cost min(3, 2) = 2, now nums = [1,2,3,4,5,6].\r\nThe total cost is 0 + 0 + 0 + 0 + 1 + 2 = 3.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> instructions = [1,3,3,3,2,4,2,1,2]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Begin with nums = [].\r\nInsert 1 with cost min(0, 0) = 0, now nums = [1].\r\nInsert 3 with cost min(1, 0) = 0, now nums = [1,3].\r\nInsert 3 with cost min(1, 0) = 0, now nums = [1,3,3].\r\nInsert 3 with cost min(1, 0) = 0, now nums = [1,3,3,3].\r\nInsert 2 with cost min(1, 3) = 1, now nums = [1,2,3,3,3].\r\nInsert 4 with cost min(5, 0) = 0, now nums = [1,2,3,3,3,4].\r\n​​​​​​​Insert 2 with cost min(1, 4) = 1, now nums = [1,2,2,3,3,3,4].\r\n​​​​​​​Insert 1 with cost min(0, 6) = 0, now nums = [1,1,2,2,3,3,3,4].\r\n​​​​​​​Insert 2 with cost min(2, 4) = 2, now nums = [1,1,2,2,2,3,3,3,4].\r\nThe total cost is 0 + 0 + 0 + 0 + 1 + 0 + 1 + 0 + 2 = 4.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= instructions.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>1 &lt;= instructions[i] &lt;= 10<sup>5</sup></code></li>\r\n</ul>",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer",
+        "Binary Indexed Tree",
+        "Segment Tree",
+        "Merge Sort",
+        "Ordered Set"
+      ],
+      "acceptance_rate": 40.56744248440539,
+      "hints": [
+        "This problem is closely related to finding the number of inversions in an array",
+        "if i know the position in which i will insert the i-th element in I can find the minimum cost to insert it"
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'Create Sorted Array through Instructions'?",
+      "mcq_options": [
+        "Merge Sort",
+        "Heap Sort",
+        "Counting Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Create Sorted Array through Instructions, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-number-of-refueling-stops",
+      "title": "Minimum Number of Refueling Stops",
+      "description": "<p>A car travels from a starting position to a destination which is <code>target</code> miles east of the starting position.</p>\n\n<p>There are gas stations along the way. The gas stations are represented as an array <code>stations</code> where <code>stations[i] = [position<sub>i</sub>, fuel<sub>i</sub>]</code> indicates that the <code>i<sup>th</sup></code> gas station is <code>position<sub>i</sub></code> miles east of the starting position and has <code>fuel<sub>i</sub></code> liters of gas.</p>\n\n<p>The car starts with an infinite tank of gas, which initially has <code>startFuel</code> liters of fuel in it. It uses one liter of gas per one mile that it drives. When the car reaches a gas station, it may stop and refuel, transferring all the gas from the station into the car.</p>\n\n<p>Return <em>the minimum number of refueling stops the car must make in order to reach its destination</em>. If it cannot reach the destination, return <code>-1</code>.</p>\n\n<p>Note that if the car reaches a gas station with <code>0</code> fuel left, the car can still refuel there. If the car reaches the destination with <code>0</code> fuel left, it is still considered to have arrived.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> target = 1, startFuel = 1, stations = []\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> We can reach the target without refueling.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> target = 100, startFuel = 1, stations = [[10,100]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> We can not reach the target (or even the first gas station).\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> target = 100, startFuel = 10, stations = [[10,60],[20,30],[30,30],[60,40]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> We start with 10 liters of fuel.\nWe drive to position 10, expending 10 liters of fuel.  We refuel from 0 liters to 60 liters of gas.\nThen, we drive from position 10 to position 60 (expending 50 liters of fuel),\nand refuel from 10 liters to 50 liters of gas.  We then drive to and reach the target.\nWe made 2 refueling stops along the way, so we return 2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= target, startFuel &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= stations.length &lt;= 500</code></li>\n\t<li><code>1 &lt;= position<sub>i</sub> &lt; position<sub>i+1</sub> &lt; target</code></li>\n\t<li><code>1 &lt;= fuel<sub>i</sub> &lt; 10<sup>9</sup></code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy",
+        "Heap (Priority Queue)"
+      ],
+      "acceptance_rate": 40.787228157341254,
+      "hints": [],
+      "mcq_question": "What is the optimal algorithm for 'Minimum Number of Refueling Stops'?",
+      "mcq_options": [
+        "Heap Sort",
+        "Quick Sort",
+        "Counting Sort",
+        "Merge Sort"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For Minimum Number of Refueling Stops, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-number-of-operations-to-make-string-sorted",
+      "title": "Minimum Number of Operations to Make String Sorted",
+      "description": "<p>You are given a string <code>s</code> (<strong>0-indexed</strong>)​​​​​​. You are asked to perform the following operation on <code>s</code>​​​​​​ until you get a sorted string:</p>\n\n<ol>\n\t<li>Find <strong>the largest index</strong> <code>i</code> such that <code>1 &lt;= i &lt; s.length</code> and <code>s[i] &lt; s[i - 1]</code>.</li>\n\t<li>Find <strong>the largest index</strong> <code>j</code> such that <code>i &lt;= j &lt; s.length</code> and <code>s[k] &lt; s[i - 1]</code> for all the possible values of <code>k</code> in the range <code>[i, j]</code> inclusive.</li>\n\t<li>Swap the two characters at indices <code>i - 1</code>​​​​ and <code>j</code>​​​​​.</li>\n\t<li>Reverse the suffix starting at index <code>i</code>​​​​​​.</li>\n</ol>\n\n<p>Return <em>the number of operations needed to make the string sorted.</em> Since the answer can be too large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cba&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> The simulation goes as follows:\nOperation 1: i=2, j=2. Swap s[1] and s[2] to get s=&quot;cab&quot;, then reverse the suffix starting at 2. Now, s=&quot;cab&quot;.\nOperation 2: i=1, j=2. Swap s[0] and s[2] to get s=&quot;bac&quot;, then reverse the suffix starting at 1. Now, s=&quot;bca&quot;.\nOperation 3: i=2, j=2. Swap s[1] and s[2] to get s=&quot;bac&quot;, then reverse the suffix starting at 2. Now, s=&quot;bac&quot;.\nOperation 4: i=1, j=1. Swap s[0] and s[1] to get s=&quot;abc&quot;, then reverse the suffix starting at 1. Now, s=&quot;acb&quot;.\nOperation 5: i=2, j=2. Swap s[1] and s[2] to get s=&quot;abc&quot;, then reverse the suffix starting at 2. Now, s=&quot;abc&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aabaa&quot;\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The simulation goes as follows:\nOperation 1: i=3, j=4. Swap s[2] and s[4] to get s=&quot;aaaab&quot;, then reverse the substring starting at 3. Now, s=&quot;aaaba&quot;.\nOperation 2: i=4, j=4. Swap s[3] and s[4] to get s=&quot;aaaab&quot;, then reverse the substring starting at 4. Now, s=&quot;aaaab&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 3000</code></li>\n\t<li><code>s</code>​​​​​​ consists only of lowercase English letters.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Math",
+        "String",
+        "Combinatorics"
+      ],
+      "acceptance_rate": 50.41060651033937,
+      "hints": [
+        "Note that the operations given describe getting the previous permutation of s",
+        "To solve this problem you need to solve every suffix separately"
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Minimum Number of Operations to Make String Sorted'?",
+      "mcq_options": [
+        "Counting Sort",
+        "Quick Sort",
+        "Merge Sort",
+        "Heap Sort"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Minimum Number of Operations to Make String Sorted, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_probability-of-a-two-boxes-having-the-same-number-of-distinct-balls",
+      "title": "Probability of a Two Boxes Having The Same Number of Distinct Balls",
+      "description": "<p>Given <code>2n</code> balls of <code>k</code> distinct colors. You will be given an integer array <code>balls</code> of size <code>k</code> where <code>balls[i]</code> is the number of balls of color <code>i</code>.</p>\n\n<p>All the balls will be <strong>shuffled uniformly at random</strong>, then we will distribute the first <code>n</code> balls to the first box and the remaining <code>n</code> balls to the other box (Please read the explanation of the second example carefully).</p>\n\n<p>Please note that the two boxes are considered different. For example, if we have two balls of colors <code>a</code> and <code>b</code>, and two boxes <code>[]</code> and <code>()</code>, then the distribution <code>[a] (b)</code> is considered different than the distribution <code>[b] (a) </code>(Please read the explanation of the first example carefully).</p>\n\n<p>Return<em> the probability</em> that the two boxes have the same number of distinct balls. Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted as correct.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> balls = [1,1]\n<strong>Output:</strong> 1.00000\n<strong>Explanation:</strong> Only 2 ways to divide the balls equally:\n- A ball of color 1 to box 1 and a ball of color 2 to box 2\n- A ball of color 2 to box 1 and a ball of color 1 to box 2\nIn both ways, the number of distinct colors in each box is equal. The probability is 2/2 = 1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> balls = [2,1,1]\n<strong>Output:</strong> 0.66667\n<strong>Explanation:</strong> We have the set of balls [1, 1, 2, 3]\nThis set of balls will be shuffled randomly and we may have one of the 12 distinct shuffles with equal probability (i.e. 1/12):\n[1,1 / 2,3], [1,1 / 3,2], [1,2 / 1,3], [1,2 / 3,1], [1,3 / 1,2], [1,3 / 2,1], [2,1 / 1,3], [2,1 / 3,1], [2,3 / 1,1], [3,1 / 1,2], [3,1 / 2,1], [3,2 / 1,1]\nAfter that, we add the first two balls to the first box and the second two balls to the second box.\nWe can see that 8 of these 12 possible random distributions have the same number of distinct colors of balls in each box.\nProbability is 8/12 = 0.66667\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> balls = [1,2,1,2]\n<strong>Output:</strong> 0.60000\n<strong>Explanation:</strong> The set of balls is [1, 2, 2, 3, 4, 4]. It is hard to display all the 180 possible random shuffles of this set but it is easy to check that 108 of them will have the same number of distinct colors in each box.\nProbability = 108 / 180 = 0.6\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= balls.length &lt;= 8</code></li>\n\t<li><code>1 &lt;= balls[i] &lt;= 6</code></li>\n\t<li><code>sum(balls)</code> is even.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Math",
+        "Dynamic Programming",
+        "Backtracking",
+        "Combinatorics",
+        "Probability and Statistics"
+      ],
+      "acceptance_rate": 60.533469249065575,
+      "hints": [
+        "Check how many ways you can distribute the balls between the boxes.",
+        "Consider that one way you will use (x1, x2, x3, ..., xk) where xi is the number of balls from colour i. The probability of achieving this way randomly is ( (ball1 C x1) * (ball2 C x2) * (ball3 C x3) * ... * (ballk C xk)) / (2n C n).",
+        "The probability of a draw is the sigma of probabilities of different ways to achieve draw.",
+        "Can you use Dynamic programming to solve this problem in a better complexity ?"
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Probability of a Two Boxes Having The Same Number of Distinct Balls' efficiently?",
+      "mcq_options": [
+        "Binary Search",
+        "Brute Force",
+        "Linear Search",
+        "Recursive Approach"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Probability of a Two Boxes Having The Same Number of Distinct Balls, Brute Force is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_gcd-sort-of-an-array",
+      "title": "GCD Sort of an Array",
+      "description": "<p>You are given an integer array <code>nums</code>, and you can perform the following operation <strong>any</strong> number of times on <code>nums</code>:</p>\n\n<ul>\n\t<li>Swap the positions of two elements <code>nums[i]</code> and <code>nums[j]</code> if <code>gcd(nums[i], nums[j]) &gt; 1</code> where <code>gcd(nums[i], nums[j])</code> is the <strong>greatest common divisor</strong> of <code>nums[i]</code> and <code>nums[j]</code>.</li>\n</ul>\n\n<p>Return <code>true</code> <em>if it is possible to sort </em><code>nums</code><em> in <strong>non-decreasing</strong> order using the above swap method, or </em><code>false</code><em> otherwise.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [7,21,3]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We can sort [7,21,3] by performing the following operations:\n- Swap 7 and 21 because gcd(7,21) = 7. nums = [<u><strong>21</strong></u>,<u><strong>7</strong></u>,3]\n- Swap 21 and 3 because gcd(21,3) = 3. nums = [<u><strong>3</strong></u>,7,<u><strong>21</strong></u>]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,2,6,2]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> It is impossible to sort the array because 5 cannot be swapped with any other element.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [10,5,9,3,15]\n<strong>Output:</strong> true\nWe can sort [10,5,9,3,15] by performing the following operations:\n- Swap 10 and 15 because gcd(10,15) = 5. nums = [<u><strong>15</strong></u>,5,9,3,<u><strong>10</strong></u>]\n- Swap 15 and 3 because gcd(15,3) = 3. nums = [<u><strong>3</strong></u>,5,9,<u><strong>15</strong></u>,10]\n- Swap 10 and 15 because gcd(10,15) = 5. nums = [3,5,9,<u><strong>10</strong></u>,<u><strong>15</strong></u>]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>2 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Math",
+        "Union Find",
+        "Sorting",
+        "Number Theory"
+      ],
+      "acceptance_rate": 47.409871162595095,
+      "hints": [
+        "Can we build a graph with all the prime numbers and the original array?",
+        "We can use union-find to determine which indices are connected (i.e., which indices can be swapped)."
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'GCD Sort of an Array'?",
+      "mcq_options": [
+        "Heap Sort",
+        "Counting Sort",
+        "Quick Sort",
+        "Merge Sort"
+      ],
+      "mcq_correct_answer": 3,
+      "mcq_explanation": "For GCD Sort of an Array, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.554105",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_verbal-arithmetic-puzzle",
+      "title": "Verbal Arithmetic Puzzle",
+      "description": "<p>Given an equation, represented by <code>words</code> on the left side and the <code>result</code> on the right side.</p>\n\n<p>You need to check if the equation is solvable under the following rules:</p>\n\n<ul>\n\t<li>Each character is decoded as one digit (0 - 9).</li>\n\t<li>No two characters can map to the same digit.</li>\n\t<li>Each <code>words[i]</code> and <code>result</code> are decoded as one number <strong>without</strong> leading zeros.</li>\n\t<li>Sum of numbers on the left side (<code>words</code>) will equal to the number on the right side (<code>result</code>).</li>\n</ul>\n\n<p>Return <code>true</code> <em>if the equation is solvable, otherwise return</em> <code>false</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;SEND&quot;,&quot;MORE&quot;], result = &quot;MONEY&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Map &#39;S&#39;-&gt; 9, &#39;E&#39;-&gt;5, &#39;N&#39;-&gt;6, &#39;D&#39;-&gt;7, &#39;M&#39;-&gt;1, &#39;O&#39;-&gt;0, &#39;R&#39;-&gt;8, &#39;Y&#39;-&gt;&#39;2&#39;\nSuch that: &quot;SEND&quot; + &quot;MORE&quot; = &quot;MONEY&quot; ,  9567 + 1085 = 10652</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;SIX&quot;,&quot;SEVEN&quot;,&quot;SEVEN&quot;], result = &quot;TWENTY&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Map &#39;S&#39;-&gt; 6, &#39;I&#39;-&gt;5, &#39;X&#39;-&gt;0, &#39;E&#39;-&gt;8, &#39;V&#39;-&gt;7, &#39;N&#39;-&gt;2, &#39;T&#39;-&gt;1, &#39;W&#39;-&gt;&#39;3&#39;, &#39;Y&#39;-&gt;4\nSuch that: &quot;SIX&quot; + &quot;SEVEN&quot; + &quot;SEVEN&quot; = &quot;TWENTY&quot; ,  650 + 68782 + 68782 = 138214</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;LEET&quot;,&quot;CODE&quot;], result = &quot;POINT&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> There is no possible mapping to satisfy the equation, so we return false.\nNote that two different characters cannot map to the same digit.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= words.length &lt;= 5</code></li>\n\t<li><code>1 &lt;= words[i].length, result.length &lt;= 7</code></li>\n\t<li><code>words[i], result</code> contain only uppercase English letters.</li>\n\t<li>The number of different characters used in the expression is at most <code>10</code>.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Math",
+        "String",
+        "Backtracking"
+      ],
+      "acceptance_rate": 34.75706308859072,
+      "hints": [
+        "Use Backtracking and pruning to solve this problem.",
+        "If you set the values of some digits (from right to left), the other digits will be constrained."
+      ],
+      "mcq_question": "Which data structure would be most helpful in solving 'Verbal Arithmetic Puzzle'?",
+      "mcq_options": [
+        "Hash Map",
+        "Stack",
+        "Binary Tree",
+        "Array"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Verbal Arithmetic Puzzle, Hash Map is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.566711",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_least-operators-to-express-number",
+      "title": "Least Operators to Express Number",
+      "description": "<p>Given a single positive integer <code>x</code>, we will write an expression of the form <code>x (op1) x (op2) x (op3) x ...</code> where each operator <code>op1</code>, <code>op2</code>, etc. is either addition, subtraction, multiplication, or division (<code>+</code>, <code>-</code>, <code>*</code>, or <code>/)</code>. For example, with <code>x = 3</code>, we might write <code>3 * 3 / 3 + 3 - 3</code> which is a value of <font face=\"monospace\">3</font>.</p>\n\n<p>When writing such an expression, we adhere to the following conventions:</p>\n\n<ul>\n\t<li>The division operator (<code>/</code>) returns rational numbers.</li>\n\t<li>There are no parentheses placed anywhere.</li>\n\t<li>We use the usual order of operations: multiplication and division happen before addition and subtraction.</li>\n\t<li>It is not allowed to use the unary negation operator (<code>-</code>). For example, &quot;<code>x - x</code>&quot; is a valid expression as it only uses subtraction, but &quot;<code>-x + x</code>&quot; is not because it uses negation.</li>\n</ul>\n\n<p>We would like to write an expression with the least number of operators such that the expression equals the given <code>target</code>. Return the least number of operators used.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 3, target = 19\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> 3 * 3 + 3 * 3 + 3 / 3.\nThe expression contains 5 operations.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 5, target = 501\n<strong>Output:</strong> 8\n<strong>Explanation:</strong> 5 * 5 * 5 * 5 - 5 * 5 * 5 + 5 / 5.\nThe expression contains 8 operations.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 100, target = 100000000\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> 100 * 100 * 100 * 100.\nThe expression contains 3 operations.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= x &lt;= 100</code></li>\n\t<li><code>1 &lt;= target &lt;= 2 * 10<sup>8</sup></code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "acceptance_rate": 48.45630988453034,
+      "hints": [],
+      "mcq_question": "What is the optimal algorithm for 'Least Operators to Express Number'?",
+      "mcq_options": [
+        "Merge Sort",
+        "Quick Sort",
+        "Counting Sort",
+        "Heap Sort"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Least Operators to Express Number, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.567714",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-number-of-taps-to-open-to-water-a-garden",
+      "title": "Minimum Number of Taps to Open to Water a Garden",
+      "description": "<p>There is a one-dimensional garden on the x-axis. The garden starts at the point <code>0</code> and ends at the point <code>n</code>. (i.e., the&nbsp;length of the garden is <code>n</code>).</p>\n\n<p>There are <code>n + 1</code> taps located at points <code>[0, 1, ..., n]</code> in the garden.</p>\n\n<p>Given an integer <code>n</code> and an integer array <code>ranges</code> of length <code>n + 1</code> where <code>ranges[i]</code> (0-indexed) means the <code>i-th</code> tap can water the area <code>[i - ranges[i], i + ranges[i]]</code> if it was open.</p>\n\n<p>Return <em>the minimum number of taps</em> that should be open to water the whole garden, If the garden cannot be watered return <strong>-1</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/01/16/1685_example_1.png\" style=\"width: 525px; height: 255px;\" />\n<pre>\n<strong>Input:</strong> n = 5, ranges = [3,4,1,1,0,0]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The tap at point 0 can cover the interval [-3,3]\nThe tap at point 1 can cover the interval [-3,5]\nThe tap at point 2 can cover the interval [1,3]\nThe tap at point 3 can cover the interval [2,4]\nThe tap at point 4 can cover the interval [4,4]\nThe tap at point 5 can cover the interval [5,5]\nOpening Only the second tap will water the whole garden [0,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, ranges = [0,0,0,0]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> Even if you activate all the four taps you cannot water the whole garden.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>\n\t<li><code>ranges.length == n + 1</code></li>\n\t<li><code>0 &lt;= ranges[i] &lt;= 100</code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "acceptance_rate": 50.76862198017411,
+      "hints": [
+        "Create intervals of the area covered by each tap, sort intervals by the left end.",
+        "We need to cover the interval [0, n]. we can start with the first interval and out of all intervals that intersect with it we choose the one that covers the farthest point to the right.",
+        "What if there is a gap between intervals that is not covered ? we should stop and return -1 as there is some interval that cannot be covered."
+      ],
+      "mcq_question": "Which approach reduces complexity in 'Minimum Number of Taps to Open to Water a Garden'?",
+      "mcq_options": [
+        "Brute Force",
+        "Divide and Conquer",
+        "Dynamic Programming",
+        "Greedy Algorithm"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Minimum Number of Taps to Open to Water a Garden, Dynamic Programming is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.568823",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_maximum-sum-bst-in-binary-tree",
+      "title": "Maximum Sum BST in Binary Tree",
+      "description": "<p>Given a <strong>binary tree</strong> <code>root</code>, return <em>the maximum sum of all keys of <strong>any</strong> sub-tree which is also a Binary Search Tree (BST)</em>.</p>\n\n<p>Assume a BST is defined as follows:</p>\n\n<ul>\n\t<li>The left subtree of a node contains only nodes with keys <strong>less than</strong> the node&#39;s key.</li>\n\t<li>The right subtree of a node contains only nodes with keys <strong>greater than</strong> the node&#39;s key.</li>\n\t<li>Both the left and right subtrees must also be binary search trees.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/01/30/sample_1_1709.png\" style=\"width: 320px; height: 250px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [1,4,3,2,4,2,5,null,null,null,null,null,null,4,6]\n<strong>Output:</strong> 20\n<strong>Explanation:</strong> Maximum sum in a valid Binary search tree is obtained in root node with key equal to 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/01/30/sample_2_1709.png\" style=\"width: 134px; height: 180px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [4,3,null,1,2]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Maximum sum in a valid Binary search tree is obtained in a single root node with key equal to 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [-4,-2,-5]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> All values are negatives. Return an empty BST.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 4 * 10<sup>4</sup>]</code>.</li>\n\t<li><code>-4 * 10<sup>4</sup> &lt;= Node.val &lt;= 4 * 10<sup>4</sup></code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "acceptance_rate": 45.25317369617506,
+      "hints": [
+        "Create a datastructure with 4 parameters:  (sum, isBST, maxLeft, minRight).",
+        "In each node compute theses parameters, following the conditions of a Binary Search Tree."
+      ],
+      "mcq_question": "Which data structure provides the best performance for 'Maximum Sum BST in Binary Tree'?",
+      "mcq_options": [
+        "Hash Map",
+        "Linked List",
+        "Binary Tree",
+        "Array"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Maximum Sum BST in Binary Tree, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.569352",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_stone-game-viii",
+      "title": "Stone Game VIII",
+      "description": "<p>Alice and Bob take turns playing a game, with <strong>Alice starting first</strong>.</p>\r\n\r\n<p>There are <code>n</code> stones arranged in a row. On each player&#39;s turn, while the number of stones is <strong>more than one</strong>, they will do the following:</p>\r\n\r\n<ol>\r\n\t<li>Choose an integer <code>x &gt; 1</code>, and <strong>remove</strong> the leftmost <code>x</code> stones from the row.</li>\r\n\t<li>Add the <strong>sum</strong> of the <strong>removed</strong> stones&#39; values to the player&#39;s score.</li>\r\n\t<li>Place a <strong>new stone</strong>, whose value is equal to that sum, on the left side of the row.</li>\r\n</ol>\r\n\r\n<p>The game stops when <strong>only</strong> <strong>one</strong> stone is left in the row.</p>\r\n\r\n<p>The <strong>score difference</strong> between Alice and Bob is <code>(Alice&#39;s score - Bob&#39;s score)</code>. Alice&#39;s goal is to <strong>maximize</strong> the score difference, and Bob&#39;s goal is the <strong>minimize</strong> the score difference.</p>\r\n\r\n<p>Given an integer array <code>stones</code> of length <code>n</code> where <code>stones[i]</code> represents the value of the <code>i<sup>th</sup></code> stone <strong>from the left</strong>, return <em>the <strong>score difference</strong> between Alice and Bob if they both play <strong>optimally</strong>.</em></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> stones = [-1,2,-3,4,-5]\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong>\r\n- Alice removes the first 4 stones, adds (-1) + 2 + (-3) + 4 = 2 to her score, and places a stone of\r\n  value 2 on the left. stones = [2,-5].\r\n- Bob removes the first 2 stones, adds 2 + (-5) = -3 to his score, and places a stone of value -3 on\r\n  the left. stones = [-3].\r\nThe difference between their scores is 2 - (-3) = 5.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> stones = [7,-6,5,10,5,-2,-6]\r\n<strong>Output:</strong> 13\r\n<strong>Explanation:</strong>\r\n- Alice removes all stones, adds 7 + (-6) + 5 + 10 + 5 + (-2) + (-6) = 13 to her score, and places a\r\n  stone of value 13 on the left. stones = [13].\r\nThe difference between their scores is 13 - 0 = 13.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> stones = [-10,-12]\r\n<strong>Output:</strong> -22\r\n<strong>Explanation:</strong>\r\n- Alice can only make one move, which is to remove both stones. She adds (-10) + (-12) = -22 to her\r\n  score and places a stone of value -22 on the left. stones = [-22].\r\nThe difference between their scores is (-22) - 0 = -22.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>n == stones.length</code></li>\r\n\t<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>-10<sup>4</sup> &lt;= stones[i] &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Math",
+        "Dynamic Programming",
+        "Prefix Sum",
+        "Game Theory"
+      ],
+      "acceptance_rate": 53.37816772814323,
+      "hints": [
+        "Let's note that the only thing that matters is how many stones were removed so we can maintain dp[numberOfRemovedStones]",
+        "dp[x] = max(sum of all elements up to y - dp[y]) for all y > x"
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'Stone Game VIII'?",
+      "mcq_options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Heap Sort",
+        "Counting Sort"
+      ],
+      "mcq_correct_answer": 1,
+      "mcq_explanation": "For Stone Game VIII, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.570469",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_minimum-incompatibility",
+      "title": "Minimum Incompatibility",
+      "description": "<p>You are given an integer array <code>nums</code>​​​ and an integer <code>k</code>. You are asked to distribute this array into <code>k</code> subsets of <strong>equal size</strong> such that there are no two equal elements in the same subset.</p>\n\n<p>A subset&#39;s <strong>incompatibility</strong> is the difference between the maximum and minimum elements in that array.</p>\n\n<p>Return <em>the <strong>minimum possible sum of incompatibilities</strong> of the </em><code>k</code> <em>subsets after distributing the array optimally, or return </em><code>-1</code><em> if it is not possible.</em></p>\n\n<p>A subset is a group integers that appear in the array with no particular order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,1,4], k = 2\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The optimal distribution of subsets is [1,2] and [1,4].\nThe incompatibility is (2-1) + (4-1) = 4.\nNote that [1,1] and [2,4] would result in a smaller sum, but the first subset contains 2 equal elements.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [6,3,8,1,3,1,2,2], k = 4\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The optimal distribution of subsets is [1,2], [2,3], [6,8], and [1,3].\nThe incompatibility is (2-1) + (3-2) + (8-6) + (3-1) = 6.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,3,3,6,3,3], k = 3\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> It is impossible to distribute nums into 3 subsets where no two elements are equal in the same subset.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= nums.length &lt;= 16</code></li>\n\t<li><code>nums.length</code> is divisible by <code>k</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= nums.length</code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "acceptance_rate": 40.39430021471794,
+      "hints": [
+        "The constraints are small enough for a backtrack solution but not any backtrack solution",
+        "If we use a naive n^k don't you think it can be optimized"
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'Minimum Incompatibility'?",
+      "mcq_options": [
+        "Counting Sort",
+        "Heap Sort",
+        "Merge Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Minimum Incompatibility, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.570469",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_count-number-of-special-subsequences",
+      "title": "Count Number of Special Subsequences",
+      "description": "<p>A sequence is <strong>special</strong> if it consists of a <strong>positive</strong> number of <code>0</code>s, followed by a <strong>positive</strong> number of <code>1</code>s, then a <strong>positive</strong> number of <code>2</code>s.</p>\n\n<ul>\n\t<li>For example, <code>[0,1,2]</code> and <code>[0,0,1,1,1,2]</code> are special.</li>\n\t<li>In contrast, <code>[2,1,0]</code>, <code>[1]</code>, and <code>[0,1,2,0]</code> are not special.</li>\n</ul>\n\n<p>Given an array <code>nums</code> (consisting of <strong>only</strong> integers <code>0</code>, <code>1</code>, and <code>2</code>), return<em> the <strong>number of different subsequences</strong> that are special</em>. Since the answer may be very large, <strong>return it modulo </strong><code>10<sup>9</sup> + 7</code>.</p>\n\n<p>A <strong>subsequence</strong> of an array is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. Two subsequences are <strong>different</strong> if the <strong>set of indices</strong> chosen are different.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,1,2,2]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The special subsequences are bolded [<strong><u>0</u></strong>,<strong><u>1</u></strong>,<strong><u>2</u></strong>,2], [<strong><u>0</u></strong>,<strong><u>1</u></strong>,2,<strong><u>2</u></strong>], and [<strong><u>0</u></strong>,<strong><u>1</u></strong>,<strong><u>2</u></strong>,<strong><u>2</u></strong>].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,2,0,0]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There are no special subsequences in [2,2,0,0].\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,1,2,0,1,2]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> The special subsequences are bolded:\n- [<strong><u>0</u></strong>,<strong><u>1</u></strong>,<strong><u>2</u></strong>,0,1,2]\n- [<strong><u>0</u></strong>,<strong><u>1</u></strong>,2,0,1,<strong><u>2</u></strong>]\n- [<strong><u>0</u></strong>,<strong><u>1</u></strong>,<strong><u>2</u></strong>,0,1,<strong><u>2</u></strong>]\n- [<strong><u>0</u></strong>,<strong><u>1</u></strong>,2,0,<strong><u>1</u></strong>,<strong><u>2</u></strong>]\n- [<strong><u>0</u></strong>,1,2,<strong><u>0</u></strong>,<strong><u>1</u></strong>,<strong><u>2</u></strong>]\n- [<strong><u>0</u></strong>,1,2,0,<strong><u>1</u></strong>,<strong><u>2</u></strong>]\n- [0,1,2,<strong><u>0</u></strong>,<strong><u>1</u></strong>,<strong><u>2</u></strong>]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 2</code></li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "acceptance_rate": 52.20873346620765,
+      "hints": [
+        "Can we first solve a simpler problem? Counting the number of subsequences with 1s followed by 0s.",
+        "How can we keep track of the partially matched subsequences to help us find the answer?"
+      ],
+      "mcq_question": "What is the optimal algorithm for 'Count Number of Special Subsequences'?",
+      "mcq_options": [
+        "Merge Sort",
+        "Counting Sort",
+        "Heap Sort",
+        "Quick Sort"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Count Number of Special Subsequences, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.570469",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_kth-ancestor-of-a-tree-node",
+      "title": "Kth Ancestor of a Tree Node",
+      "description": "<p>You are given a tree with <code>n</code> nodes numbered from <code>0</code> to <code>n - 1</code> in the form of a parent array <code>parent</code> where <code>parent[i]</code> is the parent of <code>i<sup>th</sup></code> node. The root of the tree is node <code>0</code>. Find the <code>k<sup>th</sup></code> ancestor of a given node.</p>\n\n<p>The <code>k<sup>th</sup></code> ancestor of a tree node is the <code>k<sup>th</sup></code> node in the path from that node to the root node.</p>\n\n<p>Implement the <code>TreeAncestor</code> class:</p>\n\n<ul>\n\t<li><code>TreeAncestor(int n, int[] parent)</code> Initializes the object with the number of nodes in the tree and the parent array.</li>\n\t<li><code>int getKthAncestor(int node, int k)</code> return the <code>k<sup>th</sup></code> ancestor of the given node <code>node</code>. If there is no such ancestor, return <code>-1</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/08/28/1528_ex1.png\" style=\"width: 396px; height: 262px;\" />\n<pre>\n<strong>Input</strong>\n[&quot;TreeAncestor&quot;, &quot;getKthAncestor&quot;, &quot;getKthAncestor&quot;, &quot;getKthAncestor&quot;]\n[[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]\n<strong>Output</strong>\n[null, 1, 0, -1]\n\n<strong>Explanation</strong>\nTreeAncestor treeAncestor = new TreeAncestor(7, [-1, 0, 0, 1, 1, 2, 2]);\ntreeAncestor.getKthAncestor(3, 1); // returns 1 which is the parent of 3\ntreeAncestor.getKthAncestor(5, 2); // returns 0 which is the grandparent of 5\ntreeAncestor.getKthAncestor(6, 3); // returns -1 because there is no such ancestor</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>parent.length == n</code></li>\n\t<li><code>parent[0] == -1</code></li>\n\t<li><code>0 &lt;= parent[i] &lt; n</code> for all <code>0 &lt; i &lt; n</code></li>\n\t<li><code>0 &lt;= node &lt; n</code></li>\n\t<li>There will be at most <code>5 * 10<sup>4</sup></code> queries.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Binary Search",
+        "Dynamic Programming",
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Design"
+      ],
+      "acceptance_rate": 36.42263999506081,
+      "hints": [
+        "The queries must be answered efficiently to avoid time limit exceeded verdict.",
+        "Use sparse table (dynamic programming application) to travel the tree upwards in a fast way."
+      ],
+      "mcq_question": "Which data structure would be most helpful in solving 'Kth Ancestor of a Tree Node'?",
+      "mcq_options": [
+        "Binary Tree",
+        "Linked List",
+        "Hash Map",
+        "Array"
+      ],
+      "mcq_correct_answer": 0,
+      "mcq_explanation": "For Kth Ancestor of a Tree Node, Binary Tree is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.570469",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_get-the-maximum-score",
+      "title": "Get the Maximum Score",
+      "description": "<p>You are given two <strong>sorted</strong> arrays of distinct integers <code>nums1</code> and <code>nums2</code>.</p>\n\n<p>A <strong>valid<strong><em> </em></strong>path</strong> is defined as follows:</p>\n\n<ul>\n\t<li>Choose array <code>nums1</code> or <code>nums2</code> to traverse (from index-0).</li>\n\t<li>Traverse the current array from left to right.</li>\n\t<li>If you are reading any value that is present in <code>nums1</code> and <code>nums2</code> you are allowed to change your path to the other array. (Only one repeated value is considered in the valid path).</li>\n</ul>\n\n<p>The <strong>score</strong> is defined as the sum of unique values in a valid path.</p>\n\n<p>Return <em>the maximum score you can obtain of all possible <strong>valid paths</strong></em>. Since the answer may be too large, return it modulo <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/16/sample_1_1893.png\" style=\"width: 500px; height: 151px;\" />\n<pre>\n<strong>Input:</strong> nums1 = [2,4,5,8,10], nums2 = [4,6,8,9]\n<strong>Output:</strong> 30\n<strong>Explanation:</strong> Valid paths:\n[2,4,5,8,10], [2,4,5,8,9], [2,4,6,8,9], [2,4,6,8,10],  (starting from nums1)\n[4,6,8,9], [4,5,8,10], [4,5,8,9], [4,6,8,10]    (starting from nums2)\nThe maximum is obtained with the path in green <strong>[2,4,6,8,10]</strong>.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [1,3,5,7,9], nums2 = [3,5,100]\n<strong>Output:</strong> 109\n<strong>Explanation:</strong> Maximum sum is obtained with the path <strong>[1,3,5,100]</strong>.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [1,2,3,4,5], nums2 = [6,7,8,9,10]\n<strong>Output:</strong> 40\n<strong>Explanation:</strong> There are no common elements between nums1 and nums2.\nMaximum sum is obtained with the path [6,7,8,9,10].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums1.length, nums2.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums1[i], nums2[i] &lt;= 10<sup>7</sup></code></li>\n\t<li><code>nums1</code> and <code>nums2</code> are strictly increasing.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "acceptance_rate": 40.30432047994581,
+      "hints": [
+        "Partition the array by common integers, and choose the path with larger sum with a DP technique."
+      ],
+      "mcq_question": "Which approach would you choose to solve 'Get the Maximum Score' efficiently?",
+      "mcq_options": [
+        "Dijkstra",
+        "DFS",
+        "BFS",
+        "Union Find"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Get the Maximum Score, BFS is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.570469",
+      "is_authentic": true
+    },
+    {
+      "problem_id": "leetcode_distribute-repeating-integers",
+      "title": "Distribute Repeating Integers",
+      "description": "<p>You are given an array of <code>n</code> integers, <code>nums</code>, where there are at most <code>50</code> unique values in the array. You are also given an array of <code>m</code> customer order quantities, <code>quantity</code>, where <code>quantity[i]</code> is the amount of integers the <code>i<sup>th</sup></code> customer ordered. Determine if it is possible to distribute <code>nums</code> such that:</p>\n\n<ul>\n\t<li>The <code>i<sup>th</sup></code> customer gets <strong>exactly</strong> <code>quantity[i]</code> integers,</li>\n\t<li>The integers the <code>i<sup>th</sup></code> customer gets are <strong>all equal</strong>, and</li>\n\t<li>Every customer is satisfied.</li>\n</ul>\n\n<p>Return <code>true</code><em> if it is possible to distribute </em><code>nums</code><em> according to the above conditions</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4], quantity = [2]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> The 0<sup>th</sup> customer cannot be given two different integers.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,3], quantity = [2]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The 0<sup>th</sup> customer is given [3,3]. The integers [1,2] are not used.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,2,2], quantity = [2,2]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The 0<sup>th</sup> customer is given [1,1], and the 1st customer is given [2,2].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == nums.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>\n\t<li><code>m == quantity.length</code></li>\n\t<li><code>1 &lt;= m &lt;= 10</code></li>\n\t<li><code>1 &lt;= quantity[i] &lt;= 10<sup>5</sup></code></li>\n\t<li>There are at most <code>50</code> unique values in <code>nums</code>.</li>\n</ul>\n",
+      "difficulty_category": "Hard",
+      "difficulty_level": 3,
+      "source": "LeetCode",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "acceptance_rate": 39.98984874632017,
+      "hints": [
+        "Count the frequencies of each number. For example, if nums = [4,4,5,5,5], frequencies = [2,3].",
+        "Each customer wants all of their numbers to be the same. This means that each customer will be assigned to one number.",
+        "Use dynamic programming. Iterate through the numbers' frequencies, and choose some subset of customers to be assigned to this number."
+      ],
+      "mcq_question": "What algorithm would be most suitable for solving 'Distribute Repeating Integers'?",
+      "mcq_options": [
+        "Quick Sort",
+        "Counting Sort",
+        "Merge Sort",
+        "Heap Sort"
+      ],
+      "mcq_correct_answer": 2,
+      "mcq_explanation": "For Distribute Repeating Integers, Merge Sort is the most suitable approach based on the problem requirements and constraints.",
+      "created_at": "2025-09-21T14:14:07.570469",
+      "is_authentic": true
+    }
+  ]
+}
