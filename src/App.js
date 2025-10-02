@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import Home from './Home';
-import LoginSignup from './LoginSignup';
-import CandidateTest from './CandidateTest';
-import CandidateDashboard from './CandidateDashboard';
-import TestMongoDB from './TestMongoDB';
-import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import LoginSignup from './pages/LoginSignup';
+import CandidateTest from './pages/CandidateTest';
+import CandidateDashboard from './pages/CandidateDashboard';
+import InterviewerDashboard from './pages/InterviewerDashboard';
+import './styles/App.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -17,24 +17,25 @@ function App() {
   };
 
   const renderCurrentPage = () => {
-    switch(currentPage) {
+    switch (currentPage) {
+      case 'home':
+        return <Home onNavigate={navigateToPage} />;
       case 'login':
         return <LoginSignup onNavigate={navigateToPage} />;
-      case 'candidate-test':
-        return <CandidateTest onNavigate={navigateToPage} />;
       case 'candidate-dashboard':
         return <CandidateDashboard onNavigate={navigateToPage} />;
-      case 'test-mongodb':
-        return <TestMongoDB />;
-      case 'home':
+      case 'candidate-test':
+        return <CandidateTest onNavigate={navigateToPage} />;
+      case 'interviewer-dashboard':
+        return <InterviewerDashboard onNavigate={navigateToPage} />;
       default:
-        return <Home />;
+        return <Home onNavigate={navigateToPage} />;
     }
   };
 
   return (
     <div className="App">
-      {currentPage !== 'login' && currentPage !== 'candidate-test' && currentPage !== 'candidate-dashboard' && currentPage !== 'test-mongodb' && <Navbar onNavigate={navigateToPage} />}
+      <Navbar onNavigate={navigateToPage} />
       {renderCurrentPage()}
     </div>
   );
